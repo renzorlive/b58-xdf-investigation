@@ -1,0 +1,116 @@
+desc,title,source_ref,ref_addr,delta,user_addr,rows,cols,esize,byte_match_pct,delta_ties,axes_corroborated,x_axis,y_axis,scaling,byte_order,data_type,size,confidence,tuned_bytes
+KF_ENA_NREG_GANG_SYN,Rev match,00003081501102 (SP15/R0C9J8B2B),0x6bf430,0x3f870,0x6feca0,9,9,8,81.48,5,YES,0x6fed40,0x6fed10,identity,big-endian,uint8,81,PARTIAL,0
+BMWtchctr_rat_p_ComprLimPctl_T,Min. boost setpoint to cancel PIDs by decreasing target pressure,00003081501102 (SP15/R0C9J8B2B),0x6b849e,0x3fd5e,0x6f81fc,1,12,16,50.0,19,NO,0x6f8214,,x0.00012207,big-endian,uint16,24,PARTIAL,0
+KL_FLD_KKS,Radiator Shutter Flap Control,00003081501102 (SP15/R0C9J8B2B),0x687332,0x3fff0,0x6c7322,1,6,8,100.0,5,YES,0x6c7316,,identity,big-endian,uint8,6,PROBABLE,0
+KF_FRKKORRF_1,Fuel scalar 1,00003081501102 (SP15/R0C9J8B2B),0x68eeb2,0x3feb0,0x6ced62,16,16,16,100.0,3,NO,0x6cefa6,0x6cef7a,x3.05176e-05,big-endian,uint16,512,PROBABLE,0
+BMWgpfheat_p_RailInjSng_M,"GPF - Rail pressure setpoint for single injection, 1/1",00003081501102 (SP15/R0C9J8B2B),0x694aec,0x3f8c2,0x6d43ae,6,6,16,100.0,814,NO,0x6d4abe,0x6d49ce,x0.000610352,big-endian,uint16,72,PROBABLE,0
+BMWgpfheat_p_RailInjMpl_M,"GPF - Rail pressure setpoint for multiple injection, 1/1",00003081501102 (SP15/R0C9J8B2B),0x694b34,0x3f87a,0x6d43ae,6,6,16,100.0,814,NO,0x6d4a82,0x6d4992,x0.000610352,big-endian,uint16,72,PROBABLE,0
+KF_ASPR_NORM_UESP_PF1,Vanos EX Spool (warm) 1,00003081501102 (SP15/R0C9J8B2B),0x6989da,0x3fe34,0x6d880e,8,8,16,100.0,2,NO,0x6d88be,0x6d889e,x0.1,big-endian,uint16,128,PROBABLE,0
+KF_ESPR_NORM_UESP_PF1,Vanos IN Spool (warm) 1,00003081501102 (SP15/R0C9J8B2B),0x6994d4,0x3fe34,0x6d9308,8,8,16,100.0,2,NO,0x6d93b8,0x6d9398,x0.1,big-endian,uint16,128,PROBABLE,0
+BMWls_rf_MaxFuOctIntkT_M,Max load (octane),00003081501102 (SP15/R0C9J8B2B),0x699fe2,0x3fe14,0x6d9df6,8,10,16,100.0,242,NO,0x6da102,0x6da0be,x0.01,big-endian,uint16,160,PROBABLE,0
+BMWls_rf_MaxFuOctIntkTSpt_M,Max load (octane - sport),00003081501102 (SP15/R0C9J8B2B),0x69a082,0x3fd74,0x6d9df6,8,10,16,100.0,242,NO,0x6da062,0x6da01e,x0.01,big-endian,uint16,160,PROBABLE,0
+BMWls_pct_FiMaxIgOfs_M,Max load (timing correction),00003081501102 (SP15/R0C9J8B2B),0x69a16a,0x3fc8c,0x6d9df6,8,10,16,100.0,242,NO,0x6d9f7a,0x6d9f46,x0.01,big-endian,uint16,160,PROBABLE,0
+BMWls_pct_FiMaxIgOfsSpt_M,Max load (timing correction - sport),00003081501102 (SP15/R0C9J8B2B),0x69a20a,0x3fbec,0x6d9df6,8,10,16,100.0,242,NO,0x6d9eda,0x6d9ea6,x0.01,big-endian,uint16,160,PROBABLE,0
+KF_PRAIL_H_K,"Rail Pressure HOMOGEN COLD - with activated VVT (GD), 1/1",00003081501102 (SP15/R0C9J8B2B),0x69d75a,0x3febc,0x6dd616,8,8,16,100.0,2,YES,0x6dd916,0x6dd8be,x0.000610352,big-endian,uint16,128,PROBABLE,0
+KF_PRAIL_HGD_K,Rail Pressure HOMOGEN COLD - with deactivated VVT (GD),00003081501102 (SP15/R0C9J8B2B),0x69d7da,0x3fe3c,0x6dd616,8,8,16,100.0,2,NO,0x6dd8a6,0x6dd84e,x0.000610352,big-endian,uint16,128,PROBABLE,0
+KF_PRAIL_HGD,Rail Pressure HOMOGEN - with deactivated VVT (GD),00003081501102 (SP15/R0C9J8B2B),0x69d85a,0x3febc,0x6dd716,8,8,16,100.0,2,YES,0x6dd936,0x6dd8de,x0.000610352,big-endian,uint16,128,PROBABLE,0
+KF_PRAIL_H,Rail pressure homogen,00003081501102 (SP15/R0C9J8B2B),0x69d95a,0x3fdbc,0x6dd716,8,8,16,100.0,2,NO,0x6dd856,0x6dd7fe,x0.000610352,big-endian,uint16,128,PROBABLE,0
+KF_MDR_ABV_SPO2_HS,Relative torque request sport MT 2,00003081501102 (SP15/R0C9J8B2B),0x6a7ce8,0x3f9d6,0x6e76be,12,10,16,100.0,2,YES,0x6e817e,0x6e827e,x0.00390625,big-endian,uint16,240,PROBABLE,0
+KF_FDZWT_PF2,Temp.  based correction factor 2,00003081501102 (SP15/R0C9J8B2B),0x6acd92,0x3f9ce,0x6ec760,6,6,16,100.0,2,YES,0x6ec808,0x6ec7f0,x6.10352e-05,big-endian,uint16,72,PROBABLE,0
+KF_FDZWT_PF1,Temp.  based correction factor 1,00003081501102 (SP15/R0C9J8B2B),0x6acdda,0x3f986,0x6ec760,6,6,16,100.0,2,NO,0x6ec7cc,0x6ec7b4,x6.10352e-05,big-endian,uint16,72,PROBABLE,0
+BMWchas_lam_InjSng_M,Lambda setpoint for single Injection,00003081501102 (SP15/R0C9J8B2B),0x6af324,0x3f988,0x6eecac,10,10,16,100.0,2,YES,0x6efbc0,0x6ef92c,x0.00358887,big-endian,uint16,200,PROBABLE,90
+BMWchas_lam_InjSngThr_M,Lambda setpoint for single injection at throttled operation mode,00003081501102 (SP15/R0C9J8B2B),0x6af3ec,0x3f988,0x6eed74,10,10,16,100.0,2,YES,0x6efbd4,0x6ef940,x0.00358887,big-endian,uint16,200,PROBABLE,90
+BMWchas_p_RailInjMpl_M,Rail pressure setpoint for multiple injection,00003081501102 (SP15/R0C9J8B2B),0x6af744,0x3f97a,0x6ef0be,6,6,16,100.0,8,NO,0x6efba6,0x6ef7c2,x0.000610352,big-endian,uint16,72,PROBABLE,0
+KL_MDG_MAX_GANG_HS,Max. torque at trans MT,00003081501102 (SP15/R0C9J8B2B),0x6b8978,0x3fcfc,0x6f8674,1,10,16,100.0,9,NO,0x705244,,x0.1,big-endian,uint16,20,PROBABLE,0
+KL_MD_K_MAX_VL,Drehzahlabhängige Vollastlinie des Verbrennungsmotors (Nkw_opt),00003081501102 (SP15/R0C9J8B2B),0x6b92e8,0x3f9b8,0x6f8ca0,1,12,16,100.0,13,YES,0x6f8d98,,identity,big-endian,uint16,24,PROBABLE,24
+KL_MD_K_MAX_BST_HS,Drehzahlabhängige Boost-Kennlinie des Verbrennungsmotors (Nkw_opt) für Handschalter,00003081501102 (SP15/R0C9J8B2B),0x6b9330,0x3f9b8,0x6f8ce8,1,12,16,100.0,2,YES,0x6f8de0,,identity,big-endian,uint16,24,PROBABLE,0
+KL_LA_SBL,Burble AFR,00003081501102 (SP15/R0C9J8B2B),0x6ba5ca,0x3f9c0,0x6f9f8a,1,6,16,100.0,482,YES,0x6fa71c,,x0.00358887,big-endian,uint16,12,PROBABLE,0
+AKRGRCC,AKRGRCC,00003081501102 (SP15/R0C9J8B2B),0x6e4726,0x3f82c,0x723f52,10,12,8,100.0,29,YES,0x723f46,0x723f3c,x0.392157,big-endian,uint8,120,PROBABLE,0
+AKRGRCCM,AKRGRCCM,00003081501102 (SP15/R0C9J8B2B),0x6e4ac2,0x3fffa,0x724abc,10,12,8,100.0,26,NO,0x724ab0,0x724aa6,x0.392157,big-endian,uint8,120,PROBABLE,0
+AKRGRCO,AKRGRCO,00003081501102 (SP15/R0C9J8B2B),0x6e4cd2,0x3fdea,0x724abc,10,12,8,100.0,26,NO,0x724ab0,0x724aa6,x0.392157,big-endian,uint8,120,PROBABLE,0
+AKRGRCOAT,AKRGRCOAT,00003081501102 (SP15/R0C9J8B2B),0x6e4d62,0x3fd5a,0x724abc,10,12,8,100.0,26,NO,0x724ab0,0x724aa6,x0.392157,big-endian,uint8,120,PROBABLE,0
+AKRGRCOATM,AKRGRCOATM,00003081501102 (SP15/R0C9J8B2B),0x6e4df2,0x3fcca,0x724abc,10,12,8,100.0,26,NO,0x724ab0,0x724aa6,x0.392157,big-endian,uint8,120,PROBABLE,0
+AKRGRCOM,AKRGRCOM,00003081501102 (SP15/R0C9J8B2B),0x6e4f26,0x3fb96,0x724abc,10,12,8,100.0,26,NO,0x724ab0,0x724aa6,x0.392157,big-endian,uint8,120,PROBABLE,0
+VMINAKR,Exhaust flap min speed to control flap with pedal,00003081501102 (SP15/R0C9J8B2B),0x6e529c,0x3f820,0x724abc,1,5,8,100.0,346,none,,,x1.25,big-endian,uint8,5,PROBABLE,0
+KLPHDRTF,HPFP HDR Temperature Factor P-Component,00003081501102 (SP15/R0C9J8B2B),0x6ef6ad,0x413b0,0x730a5d,1,4,8,100.0,3,NO,0x730a59,,x0.0078125,big-endian,uint8,4,PROBABLE,0
+KLVRABSCH,Kennlinie für Vmax-Regler-Abschaltschwelle,00003081501102 (SP15/R0C9J8B2B),0x6f7466,0x3f956,0x736dbc,1,4,16,25.0,2021,NO,0x736e02,,x0.0078125,big-endian,uint16,8,REJECT,0
+KL_MDG_MAX_GANG_AT,Max. torque at trans AT,00003081501102 (SP15/R0C9J8B2B),0x6b898c,0x3fce2,0x6f866e,1,10,16,5.0,10,NO,0x705236,,x0.1,big-endian,uint16,20,REJECT,0
+KF_ZW_S_PF2,Timing (cold) 2,00003081501102 (SP15/R0C9J8B2B),0x6c37c0,0x3fa50,0x703210,16,20,8,3.75,1,NO,0x6ec660,0x6ec5b8,x0.5,big-endian,uint8,320,REJECT,91
+KL_NEL_TMOT,Fan PWM based on coolant act to target delta,00003081501102 (SP15/R0C9J8B2B),0x684ce8,0x3fff4,0x6c4cdc,1,12,8,100.0,1,YES,0x6c4cc4,,x0.392156862745,big-endian,uint8,12,VERIFIED,0
+KF_VSEWP_LLK_TANS,"Intake Waterpump flow ( IAT minus ambient temp, ambient temp)",00003081501102 (SP15/R0C9J8B2B),0x685046,0x3fff4,0x6c503a,6,6,16,100.0,1,YES,0x6c502e,0x6c5022,x0.5,big-endian,uint16,72,VERIFIED,0
+KL_MDRED_NKW,Torque Reduction Factor (RPM),00003081501102 (SP15/R0C9J8B2B),0x6854da,0x3fff4,0x6c54ce,1,6,8,100.0,1,YES,0x6c54c2,,x0.0078125,big-endian,uint8,6,VERIFIED,0
+K_TKW_NO,Coolant target (normal),00003081501102 (SP15/R0C9J8B2B),0x68554a,0x3fff4,0x6c553e,1,4,16,100.0,1,YES,0x6c5536,,x0.01,big-endian,uint16,8,VERIFIED,0
+KL_TKW_HI,Coolant target (high),00003081501102 (SP15/R0C9J8B2B),0x68555c,0x3fff4,0x6c5550,1,4,16,100.0,1,YES,0x6c5548,,x0.01,big-endian,uint16,8,VERIFIED,0
+KF_EDA_ANZ_SPORT_MD_EM1_IST,Anpassung des Moments für die Performanceanzeige0,00003081501102 (SP15/R0C9J8B2B),0x689d8a,0x3ff1e,0x6c9ca8,6,6,16,100.0,1,YES,0x6c9d44,0x6c9d74,x0.1,big-endian,uint16,72,VERIFIED,36
+KF_EDA_ANZ_SPORT_MDK_IST,Performance gauge scaling,00003081501102 (SP15/R0C9J8B2B),0x689dd2,0x3ff1e,0x6c9cf0,6,6,16,100.0,1,YES,0x6c9d50,0x6c9d80,x0.1,big-endian,uint16,72,VERIFIED,12
+KF_FMS_HFMPL_MX,Mass flow ratio (ceiling) for diag sensor pressure in CP,00003081501102 (SP15/R0C9J8B2B),0x68d45e,0x3feb4,0x6cd312,6,6,16,100.0,1,YES,0x6cd3ba,0x6cd3a2,x3.051758e-05,big-endian,uint16,72,VERIFIED,60
+KF_FMS_HFMPL_MN,Mass flow ratio (floor) for diag sensor pressure in CP,00003081501102 (SP15/R0C9J8B2B),0x68d4a6,0x3feb4,0x6cd35a,6,6,16,100.0,1,YES,0x6cd3c6,0x6cd3ae,x3.051758e-05,big-endian,uint16,72,VERIFIED,72
+BMWinjafs_fac_RatAirMax_T,Max load for L-stoich Adapt.,00003081501102 (SP15/R0C9J8B2B),0x68ee68,0x3feb4,0x6ced1c,1,6,16,100.0,1,YES,0x6ced34,,x0.01,big-endian,uint16,12,VERIFIED,0
+KF_BSLGF,Lambda ceiling component protection - filling,00003081501102 (SP15/R0C9J8B2B),0x692592,0x3feb4,0x6d2446,4,4,16,100.0,1,YES,0x6d2586,0x6d2530,x0.00358886682,big-endian,uint16,32,VERIFIED,0
+KF_TA_VKSOLL,EGT Pre-cat Ceiling for switch to component protection,00003081501102 (SP15/R0C9J8B2B),0x69283c,0x3feb4,0x6d26f0,4,4,16,100.0,1,YES,0x6d27f0,0x6d2780,x0.1,big-endian,uint16,32,VERIFIED,0
+KF_TA_IKSOLL,EGT Cat Ceiling for switch to component protection,00003081501102 (SP15/R0C9J8B2B),0x69285c,0x3feb4,0x6d2710,4,4,16,100.0,1,YES,0x6d27f8,0x6d2788,x0.1,big-endian,uint16,32,VERIFIED,0
+KF_TA_ATLSOLL,EGT Turbo Ceiling for switch to component protection,00003081501102 (SP15/R0C9J8B2B),0x69287c,0x3feb4,0x6d2730,4,4,16,100.0,1,YES,0x6d2800,0x6d2790,x0.1,big-endian,uint16,32,VERIFIED,0
+BMWlpa_rat_EfpPwm_T,EKP Ansteuerung Drehzahl in PWM,00003081501102 (SP15/R0C9J8B2B),0x694166,0x3fe98,0x6d3ffe,1,6,16,100.0,1,YES,0x6d410e,,x0.01,big-endian,uint16,12,VERIFIED,0
+BMWlpsd_p_RailDifMax_T,Max rail diff,00003081501102 (SP15/R0C9J8B2B),0x6947f2,0x3fe98,0x6d468a,1,4,16,100.0,1,YES,0x6d4692,,x0.000610351563,big-endian,uint16,8,VERIFIED,0
+BMWgpfheat_tq_ResExhFlpClsd_T,"Momentenreserve, ab er die Abgasklappe aus akustischen Gründen geschlossen werden soll.0",00003081501102 (SP15/R0C9J8B2B),0x6950fc,0x3fdb0,0x6d4eac,1,8,16,100.0,1,YES,0x6d4f9c,,x0.1,big-endian,uint16,16,VERIFIED,0
+KF_LAMIN_H,Lambda Limit (Rich),00003081501102 (SP15/R0C9J8B2B),0x697910,0x3feb4,0x6d77c4,6,6,16,100.0,1,YES,0x6d7818,0x6d780c,x0.00358886682,big-endian,uint16,72,VERIFIED,0
+KF_FTRANSVL,Throttle aggression in overload,00003081501102 (SP15/R0C9J8B2B),0x69823e,0x3feb4,0x6d80f2,8,8,16,100.0,1,YES,0x6d8796,0x6d8662,x1.525879e-05,big-endian,uint16,128,VERIFIED,0
+GKF_ASPR_NORM_WARM_PF2,Vanos EX (warm) 2,00003081501102 (SP15/R0C9J8B2B),0x698d3c,0x3feb4,0x6d8bf0,12,16,16,100.0,1,YES,0x6d9250,0x6d91f0,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ASPR_NORM_WARM_PF1,Vanos EX (warm) 1,00003081501102 (SP15/R0C9J8B2B),0x698ebc,0x3feb4,0x6d8d70,12,16,16,100.0,1,YES,0x6d9270,0x6d9208,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ASPR_NORM_KALT_PF2,Vanos EX (cold) 2,00003081501102 (SP15/R0C9J8B2B),0x69903c,0x3feb4,0x6d8ef0,12,16,16,100.0,1,YES,0x6d9250,0x6d91f0,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ASPR_NORM_KALT_PF1,Vanos EX (cold) 1,00003081501102 (SP15/R0C9J8B2B),0x6991bc,0x3feb4,0x6d9070,12,16,16,100.0,1,YES,0x6d9270,0x6d9208,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ESPR_NORM_WARM_PF2,Vanos IN (warm) 2,00003081501102 (SP15/R0C9J8B2B),0x699836,0x3feb4,0x6d96ea,12,16,16,100.0,1,YES,0x6d9d4a,0x6d9cea,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ESPR_NORM_WARM_PF1,Vanos IN (warm) 1,00003081501102 (SP15/R0C9J8B2B),0x6999b6,0x3feb4,0x6d986a,12,16,16,100.0,1,YES,0x6d9d6a,0x6d9d02,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ESPR_NORM_KALT_PF2,Vanos IN (cold) 2,00003081501102 (SP15/R0C9J8B2B),0x699b36,0x3feb4,0x6d99ea,12,16,16,100.0,1,YES,0x6d9d4a,0x6d9cea,x0.1,big-endian,uint16,384,VERIFIED,0
+GKF_ESPR_NORM_KALT_PF1,Vanos IN (cold) 1,00003081501102 (SP15/R0C9J8B2B),0x699cb6,0x3feb4,0x6d9b6a,12,16,16,100.0,1,YES,0x6d9d6a,0x6d9d02,x0.1,big-endian,uint16,384,VERIFIED,0
+KL_RF_MAX_UESP,Max load (spool),00003081501102 (SP15/R0C9J8B2B),0x699f12,0x3feb4,0x6d9dc6,1,12,16,100.0,1,YES,0x6da1b6,,x0.01,big-endian,uint16,24,VERIFIED,24
+KL_RF_MAX,Max load (main),00003081501102 (SP15/R0C9J8B2B),0x699f2a,0x3feb4,0x6d9dde,1,12,16,100.0,1,YES,0x6da1ce,,x0.01,big-endian,uint16,24,VERIFIED,24
+"For naturally aspirated operation, should not exceed 100% KL_LAMX",Max naturally aspirated volumetric efficiency,00003081501102 (SP15/R0C9J8B2B),0x69a332,0x3feb4,0x6da1e6,1,18,16,100.0,1,YES,0x6da20a,,x0.01,big-endian,uint16,36,VERIFIED,36
+KF_HUB_GRDMX,Max valve lift (10ms),00003081501102 (SP15/R0C9J8B2B),0x69a7b0,0x3feb4,0x6da664,6,6,16,100.0,1,YES,0x6da744,0x6da72c,x0.001,big-endian,uint16,72,VERIFIED,0
+KF_EHUB_MX,Kennfeld maximaler Einlassventilhub,00003081501102 (SP15/R0C9J8B2B),0x69a7f8,0x3feb4,0x6da6ac,6,6,16,100.0,1,YES,0x6da750,0x6da718,x0.001,big-endian,uint16,72,VERIFIED,0
+KF_HUBESTM,Valvetronic at start (tmot),00003081501102 (SP15/R0C9J8B2B),0x69abd2,0x3feb4,0x6daa86,8,8,16,100.0,1,YES,0x6dc37e,0x6dc246,x0.001,big-endian,uint16,128,VERIFIED,0
+GKF_EHUB_NORM_WARM_LAST,Valve lift (main),00003081501102 (SP15/R0C9J8B2B),0x69bd12,0x3feb4,0x6dbbc6,20,20,16,100.0,1,YES,0x6dc356,0x6dc21e,x0.001,big-endian,uint16,800,VERIFIED,0
+BMWtchdiag_pct_WgPLo_M,PID correction ceiling,00003081501102 (SP15/R0C9J8B2B),0x69ddc6,0x3fe22,0x6ddbe8,4,4,16,100.0,1,YES,0x6ddcac,0x6ddc9c,x0.003051758,big-endian,uint16,32,VERIFIED,25
+BMWtchdiag_pct_WgPHi_M,PID correction floor,00003081501102 (SP15/R0C9J8B2B),0x69dde6,0x3fe22,0x6ddc08,4,4,16,100.0,1,YES,0x6ddcb4,0x6ddca4,x0.003051758,big-endian,uint16,32,VERIFIED,32
+BMWtchsp_rat_p_CmprPmp_T,Boost set limit,00003081501102 (SP15/R0C9J8B2B),0x69e222,0x3fe22,0x6de044,1,8,16,100.0,1,YES,0x6de128,,x6.103516e-05,big-endian,uint16,16,VERIFIED,16
+BMWtchsp_rat_p_CmprMax_M,Boost Limit multiplier,00003081501102 (SP15/R0C9J8B2B),0x69e232,0x3fe22,0x6de054,6,8,16,100.0,1,YES,0x6de138,0x6de11c,x6.103516e-05,big-endian,uint16,96,VERIFIED,96
+KF_MDIOP_1_TQE,Load to torque,00003081501102 (SP15/R0C9J8B2B),0x6a2db0,0x3fe12,0x6e2bc2,20,18,16,100.0,1,YES,0x6e2e92,0x6e2eb6,x0.1,big-endian,uint16,720,VERIFIED,0
+KL_T_IKAT_SOUND_MX,Max. cat temp for burble after X uses,00003081501102 (SP15/R0C9J8B2B),0x6a3a5a,0x3fd90,0x6e37ea,1,4,16,100.0,1,NO,0x70066c,,x0.1,big-endian,uint16,8,PROBABLE,0
+KL_NKW_SOUND_MX,Max. rpm for burble per gear,00003081501102 (SP15/R0C9J8B2B),0x6a3a62,0x3fd90,0x6e37f2,1,8,16,100.0,1,NO,0x700670,,identity,big-endian,uint16,16,PROBABLE,0
+KL_NKW_SOUND_MN,Min. rpm for burble per gear,00003081501102 (SP15/R0C9J8B2B),0x6a3a72,0x3fd90,0x6e3802,1,8,16,100.0,1,NO,0x700670,,identity,big-endian,uint16,16,PROBABLE,0
+KL_TD_SOUND_MX_SPORT,Burble duration sport,00003081501102 (SP15/R0C9J8B2B),0x6a3a8a,0x3fd90,0x6e381a,1,4,16,100.0,1,YES,0x6e3832,,x0.01,big-endian,uint16,8,VERIFIED,0
+KL_TD_SOUND_MX_FREI,Burble duration sport (custom),00003081501102 (SP15/R0C9J8B2B),0x6a3a92,0x3fd90,0x6e3822,1,4,16,100.0,1,YES,0x6e383a,,x0.01,big-endian,uint16,8,VERIFIED,0
+KL_TD_SOUND_MX,Burble duration (base),00003081501102 (SP15/R0C9J8B2B),0x6a3a9a,0x3fd90,0x6e382a,1,4,16,100.0,1,YES,0x6e3842,,x0.01,big-endian,uint16,8,VERIFIED,0
+BMWtqe_tqc_FlApplStgNorm_T,Torque request ceiling,00003081501102 (SP15/R0C9J8B2B),0x6a6ef2,0x3f9ea,0x6e68dc,1,18,16,100.0,1,YES,0x6e6900,,x0.1,big-endian,uint16,36,VERIFIED,36
+KF_MD_RES_NST_KEY,Moment reserve after start,00003081501102 (SP15/R0C9J8B2B),0x6a7524,0x3f9e8,0x6e6f0c,4,4,16,100.0,1,YES,0x6e6f4c,0x6e6f5c,x0.1,big-endian,uint16,32,VERIFIED,0
+KF_MDR_ABV_SPO_HS,Relative torque request sport MT 1,00003081501102 (SP15/R0C9J8B2B),0x6a7bf8,0x3f9d6,0x6e75ce,12,10,16,100.0,1,YES,0x6e816a,0x6e8266,x0.00390625,big-endian,uint16,240,VERIFIED,0
+KF_MDR_ABV_SPO2,Relative torque request sport 2,00003081501102 (SP15/R0C9J8B2B),0x6a7dd8,0x3f9d6,0x6e77ae,12,10,16,100.0,1,YES,0x6e8192,0x6e8296,x0.00390625,big-endian,uint16,240,VERIFIED,0
+KF_MDR_ABV_SPO,Relative torque request sport,00003081501102 (SP15/R0C9J8B2B),0x6a7ec8,0x3f9d6,0x6e789e,12,10,16,100.0,1,YES,0x6e81a6,0x6e82ae,x0.00390625,big-endian,uint16,240,VERIFIED,0
+K_TKW_WA,Coolant target (warmup-vWM),00003081501102 (SP15/R0C9J8B2B),0x6acae8,0x3f9ce,0x6ec4b6,1,2,16,100.0,1,YES,,,x0.01,big-endian,uint16,4,VERIFIED,0
+K_TKW_MX,Coolant target (misc),00003081501102 (SP15/R0C9J8B2B),0x6acaf4,0x3f9ce,0x6ec4c2,1,4,16,100.0,1,YES,,,x0.01,big-endian,uint16,8,VERIFIED,0
+BMWshl_ti_DlyMtSfu_T,MT shift delay,00003081501102 (SP15/R0C9J8B2B),0x6ae668,0x3f95e,0x6edfc6,1,6,16,100.0,1,YES,,,x0.01,big-endian,uint16,12,VERIFIED,0
+BMWchas_lam_InjMpl_M,Lambda setpoint for multiple Injection,00003081501102 (SP15/R0C9J8B2B),0x6af4f4,0x3f988,0x6eee7c,10,10,16,100.0,1,YES,0x6efbf8,0x6ef964,x0.00358886682,big-endian,uint16,200,VERIFIED,90
+BMWchas_lam_InjMplThr_M,Lambda setpoint for multiple Injection at throttled operation mode,00003081501102 (SP15/R0C9J8B2B),0x6af5bc,0x3f988,0x6eef44,10,10,16,100.0,1,YES,0x6efc0c,0x6ef978,x0.00358886682,big-endian,uint16,200,VERIFIED,90
+BMWchas_p_RailInjSng_M,Rail pressure setpoint for single injection,00003081501102 (SP15/R0C9J8B2B),0x6af6c4,0x3f988,0x6ef04c,8,8,16,100.0,1,YES,0x6efba4,0x6ef7c0,x0.000610351563,big-endian,uint16,128,VERIFIED,0
+BMWchas_tq_ResExhFlpClsd_T,"Momentenreserve, ab er die Abgasklappe aus akustischen Gründen geschlossen werden soll.",00003081501102 (SP15/R0C9J8B2B),0x6af78c,0x3f988,0x6ef114,1,8,16,100.0,1,YES,0x6efac4,,x0.1,big-endian,uint16,16,VERIFIED,0
+BMWinjmon_fac_HppEff_M,Injection map Factor Efficiency High-pressure pump,00003081501102 (SP15/R0C9J8B2B),0x6b10ca,0x3f986,0x6f0a50,4,8,16,100.0,1,YES,0x6f0b14,0x6f0af4,x3.051758e-05,big-endian,uint16,64,VERIFIED,0
+KL_RFMIN_KRSTSYS,Min load for load limiting from fueling,00003081501102 (SP15/R0C9J8B2B),0x6b11b6,0x3f986,0x6f0b3c,1,8,16,100.0,1,YES,0x6f0b4c,,x0.01,big-endian,uint16,16,VERIFIED,0
+KF_ST_RKBAS_VVT,Kennfeld Basis-Rk Menge VVT Betrieb,00003081501102 (SP15/R0C9J8B2B),0x6ba13c,0x3f9cc,0x6f9b08,12,12,16,100.0,1,YES,0x6f9c6c,0x6f9c28,x0.04882812,big-endian,uint16,288,VERIFIED,0
+KF_ST_RKBAS_GD,Kennfeld Basis-Rk Menge gedrosselter Betrieb,00003081501102 (SP15/R0C9J8B2B),0x6ba2fe,0x3f9cc,0x6f9cca,10,10,16,100.0,1,YES,0x6f9e1e,0x6f9d92,x0.04882812,big-endian,uint16,200,VERIFIED,0
+KF_LABAS_2,Fuel (Bank 2),00003081501102 (SP15/R0C9J8B2B),0x6ba83a,0x3f9c0,0x6fa1fa,17,18,16,100.0,1,YES,0x6fa6f0,0x6fa6ce,x0.0035888671875,big-endian,uint16,612,VERIFIED,301
+KF_LABAS_1,Fuel (Bank 1),00003081501102 (SP15/R0C9J8B2B),0x6baa9e,0x3f9c0,0x6fa45e,17,18,16,100.0,1,YES,0x6fa6f0,0x6fa6ce,x0.0035888671875,big-endian,uint16,612,VERIFIED,332
+KF_FMS_DKPSRPL_MX,Mass flow ratio (ceiling) for diag MAF,00003081501102 (SP15/R0C9J8B2B),0x6bb738,0x3f9de,0x6fb116,6,6,16,100.0,1,YES,0x6fb1d6,0x6fb1b2,x3.051758e-05,big-endian,uint16,72,VERIFIED,36
+KF_FMS_DKPSRPL_MN,Mass flow ratio (floor) for diag MAF,00003081501102 (SP15/R0C9J8B2B),0x6bb780,0x3f9de,0x6fb15e,6,6,16,100.0,1,YES,0x6fb1e2,0x6fb1be,x3.051758e-05,big-endian,uint16,72,VERIFIED,36
+K_EDA_P_ANZ_SPORT_BS_SCAL_CODE,Perf display scaling - power,00003081501102 (SP15/R0C9J8B2B),0x6bcf9d,0x3f8fc,0x6fc899,1,4,8,100.0,1,YES,,,identity,big-endian,uint8,4,VERIFIED,4
+K_EDA_MD_ANZ_BS_SCAL_CODE,Perf display scaling - torque,00003081501102 (SP15/R0C9J8B2B),0x6bcfa1,0x3f8fc,0x6fc89d,1,5,8,100.0,1,YES,,,identity,big-endian,uint8,5,VERIFIED,4
+BMWchas_st_OpmBasc_M,Basic catalyst heating mode wish,00003081501102 (SP15/R0C9J8B2B),0x6bd15c,0x3f8f8,0x6fca54,8,8,8,100.0,1,NO,0x6cb5be,0x6cb63a,identity,big-endian,uint8,64,PROBABLE,35
+KL_ENA_NREG_DSC,Rev match active depending on DSC Mode,00003081501102 (SP15/R0C9J8B2B),0x6bf428,0x3f870,0x6fec98,1,6,8,100.0,1,YES,0x6fed38,,identity,big-endian,uint8,6,VERIFIED,0
+BMWtqe_b_SptDet4NoiseAcvn_M,Activation burble based on DSC and Mode,00003081501102 (SP15/R0C9J8B2B),0x6c08e8,0x3f814,0x7000fc,4,12,8,100.0,1,NO,0x70013c,0x700138,identity,big-endian,uint8,48,PROBABLE,0
+BMWtqe_b_Clu4NoiseDeac_T,Deactivate burble by clutch use,00003081501102 (SP15/R0C9J8B2B),0x6c0918,0x3f814,0x70012c,1,12,8,100.0,1,NO,0x70013c,,identity,big-endian,uint8,12,PROBABLE,0
+KF_DZWT_PF2,Temp. based correction 2 (main),00003081501102 (SP15/R0C9J8B2B),0x6c7238,0x3f898,0x706ad0,16,20,8,100.0,1,NO,0x6f94c4,0x6f942c,x0.5,big-endian,uint8,320,PROBABLE,0
+KL_MD_K_MAX_VL_HS,Speed-dependent full load curve (half step),A2L R0C9J8B2B_3081-080 (DAMOS) + SP15 XDF,0x6b92d0,0x3f9d0,0x6f8ca0,1,12,16,100.0,1,YES,0x6f8d98,,"identity (A2L COMPU_METHOD: Nm, COEFFS 0 1 0 0 0 1)",big-endian (MSB_FIRST),uint16,24,VERIFIED,24
+KL_MD_K_MAX_VL,Speed-dependent full load curve,A2L R0C9J8B2B_3081-080 (DAMOS) + SP15 XDF,0x6b92e8,0x3f9d0,0x6f8cb8,1,12,16,100.0,1,YES,0x6f8db0,,"identity (A2L COMPU_METHOD: Nm, COEFFS 0 1 0 0 0 1)",big-endian (MSB_FIRST),uint16,24,VERIFIED,24
+KL_MD_K_MAX_RST_HS,Speed-dependent launch control curve (half step),A2L R0C9J8B2B_3081-080 (DAMOS) + SP15 XDF,0x6b9300,0x3f9d0,0x6f8cd0,1,12,16,100.0,1,YES,0x6f8dc8,,"identity (A2L COMPU_METHOD: Nm, COEFFS 0 1 0 0 0 1)",big-endian (MSB_FIRST),uint16,24,VERIFIED,0
+KL_MD_K_MAX_RST,Speed-dependent launch control curve,A2L R0C9J8B2B_3081-080 (DAMOS) + SP15 XDF,0x6b9318,0x3f9d0,0x6f8ce8,1,12,16,100.0,1,YES,0x6f8de0,,"identity (A2L COMPU_METHOD: Nm, COEFFS 0 1 0 0 0 1)",big-endian (MSB_FIRST),uint16,24,VERIFIED,0
+KL_MD_K_MAX_BST_HS,"Speed-dependent boost curve, manual transmission",A2L R0C9J8B2B_3081-080 (DAMOS) + SP15 XDF,0x6b9330,0x3f9d0,0x6f8d00,1,12,16,100.0,1,YES,0x6f8df8,,"identity (A2L COMPU_METHOD: Nm, COEFFS 0 1 0 0 0 1)",big-endian (MSB_FIRST),uint16,24,VERIFIED,24
+KL_MD_K_MAX_BST,Speed-dependent boost curve,A2L R0C9J8B2B_3081-080 (DAMOS) + SP15 XDF,0x6b9348,0x3f9d0,0x6f8d18,1,12,16,100.0,1,YES,0x6f8e10,,"identity (A2L COMPU_METHOD: Nm, COEFFS 0 1 0 0 0 1)",big-endian (MSB_FIRST),uint16,24,VERIFIED,24

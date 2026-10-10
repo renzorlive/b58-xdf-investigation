@@ -1,0 +1,90 @@
+region,start,end,span,changed_bytes,classification,reference,byte_level_evidence,semantic_identification,breakdown
+1,0x006C0201,0x006C0203,3,3,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=3
+2,0x006C5452,0x006C546A,25,5,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=5
+3,0x006C54CD,0x006C54CD,1,1,VERIFIED_AXIS,KL_MDRED_NKW/x,axis bytes identical to SP15 reference,definition carries a Bosch name from the source pack,VERIFIED_AXIS=1
+4,0x006C9C12,0x006C9C13,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+5,0x006C9CAE,0x006C9D5B,174,52,VERIFIED_CELL,KF_EDA_ANZ_SPORT_MD_EM1_IST,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,UNEXPLAINED=2; VERIFIED_AXIS=2; VERIFIED_CELL=12; VERIFIED_CELL=36
+6,0x006CB68E,0x006CB68F,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+7,0x006CD31E,0x006CD3A1,132,132,VERIFIED_CELL,KF_FMS_HFMPL_MN,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=72; VERIFIED_CELL=60
+8,0x006D007F,0x006D00C3,69,36,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=36
+9,0x006D01EF,0x006D0233,69,36,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=36
+10,0x006D3044,0x006D3045,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+11,0x006D400A,0x006D4015,12,8,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=8
+12,0x006D9DC6,0x006D9DF5,48,48,VERIFIED_CELL,KL_RF_MAX_UESP,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=24; VERIFIED_CELL=24
+13,0x006DA1E6,0x006DA209,36,36,VERIFIED_CELL,"For naturally aspirated operation, should not exceed 100% KL_LAMX",SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=36
+14,0x006DDBE6,0x006DDC27,66,59,VERIFIED_CELL,BMWtchdiag_pct_WgPHi_M,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,UNEXPLAINED=2; VERIFIED_CELL=32; VERIFIED_CELL=25
+15,0x006DDC88,0x006DDC8F,8,8,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=8
+16,0x006DE03A,0x006DE0B3,122,114,VERIFIED_CELL,BMWtchsp_rat_p_CmprMax_M,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,UNEXPLAINED=2; VERIFIED_CELL=96; VERIFIED_CELL=16
+17,0x006DF86B,0x006DF88D,35,19,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=19
+18,0x006E2EAC,0x006E2EB5,10,10,VERIFIED_AXIS,KF_MDIOP_1_TQE/x,axis bytes identical to SP15 reference,definition carries a Bosch name from the source pack,VERIFIED_AXIS=10
+19,0x006E68DC,0x006E68FF,36,36,VERIFIED_CELL,BMWtqe_tqc_FlApplStgNorm_T,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=36
+20,0x006E704C,0x006E706F,36,18,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=18
+21,0x006EDF88,0x006EDFA3,28,28,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=28
+22,0x006EED12,0x006EED73,98,90,PROBABLE,BMWchas_lam_InjSng_M,byte-verified but axis failed corroboration; not emitted,definition carries a Bosch name from the source pack,PROBABLE=90
+23,0x006EEDDA,0x006EEE3B,98,90,PROBABLE,BMWchas_lam_InjSngThr_M,byte-verified but axis failed corroboration; not emitted,definition carries a Bosch name from the source pack,PROBABLE=90
+24,0x006EEEE2,0x006EEF43,98,90,VERIFIED_CELL,BMWchas_lam_InjMpl_M,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=90
+25,0x006EEFAA,0x006EF00B,98,90,VERIFIED_CELL,BMWchas_lam_InjMplThr_M,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=90
+26,0x006F1BA0,0x006F1C1F,128,44,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=44
+27,0x006F6F4E,0x006F6FEB,158,117,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=117
+28,0x006F7039,0x006F70D5,157,113,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=113
+29,0x006F7AD8,0x006F7AFB,36,36,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=36
+30,0x006F7F2E,0x006F7FBD,144,144,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=144
+31,0x006F86EC,0x006F8727,60,60,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=60
+32,0x006F87EC,0x006F8865,122,80,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=80
+33,0x006F8CA0,0x006F8D2F,144,96,VERIFIED_CELL,KL_MD_K_MAX_VL_HS,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=24; VERIFIED_CELL=24; VERIFIED_CELL=24; VERIFIED_CELL=24
+34,0x006FA260,0x006FA45D,510,301,VERIFIED_CELL,KF_LABAS_2,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=301
+35,0x006FA4C4,0x006FA6EF,556,366,VERIFIED_CELL,KF_LABAS_1,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_AXIS=34; VERIFIED_CELL=332
+36,0x006FB116,0x006FB181,108,72,VERIFIED_CELL,KF_FMS_DKPSRPL_MX,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=36; VERIFIED_CELL=36
+37,0x006FB428,0x006FB431,10,10,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=10
+38,0x006FC899,0x006FC8A1,9,8,VERIFIED_CELL,K_EDA_P_ANZ_SPORT_BS_SCAL_CODE,SP15 byte-identity + axes corroborate,definition carries a Bosch name from the source pack,VERIFIED_CELL=4; VERIFIED_CELL=4
+39,0x006FCA5C,0x006FCA95,58,36,PROBABLE,BMWchas_st_OpmBasc_M,byte-verified but axis failed corroboration; not emitted,definition carries a Bosch name from the source pack,PROBABLE=35; UNEXPLAINED=1
+40,0x00702BA2,0x00702BB4,19,19,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=19
+41,0x0070304B,0x007030CF,133,91,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=91
+42,0x0070318B,0x0070320F,133,91,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=91
+43,0x007032CB,0x0070334F,133,91,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=91
+44,0x0070340B,0x0070348F,133,91,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=91
+45,0x00707059,0x00707073,27,25,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=25
+46,0x00708D08,0x00708D08,1,1,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=1
+47,0x00708D9E,0x00708D9F,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+48,0x00709230,0x00709231,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+49,0x0070B016,0x0070B02D,24,6,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=6
+50,0x0070B20F,0x0070B217,9,3,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=3
+51,0x0070B287,0x0070B289,3,3,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=3
+52,0x0070B2CC,0x0070B31A,79,7,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=7
+53,0x0070B44F,0x0070B44F,1,1,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=1
+54,0x0070B53D,0x0070B60D,209,23,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=23
+55,0x0070B666,0x0070B666,1,1,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=1
+56,0x0070B6D2,0x0070B744,115,10,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=10
+57,0x00716694,0x007166F3,96,28,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=28
+58,0x00716DB0,0x00716DCF,32,32,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=32
+59,0x00716E4C,0x00716E9B,80,44,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=44
+60,0x00717058,0x00717063,12,12,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=12
+61,0x0071716C,0x0071716F,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+62,0x0071720C,0x0071724B,64,20,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=20
+63,0x007172A4,0x007172A7,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+64,0x007174D4,0x007174D7,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+65,0x00717778,0x0071777B,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+66,0x00717910,0x00717913,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+67,0x00717B30,0x00717B77,72,36,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=36
+68,0x00717BD0,0x00717BD7,8,8,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=8
+69,0x00717CCC,0x00717CD7,12,12,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=12
+70,0x00717D7C,0x00717DFB,128,24,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=24
+71,0x00717E54,0x00717E73,32,28,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=28
+72,0x00717FD4,0x00717FD7,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+73,0x00718184,0x0071818B,8,8,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=8
+74,0x007181D0,0x007181EF,32,20,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=20
+75,0x007182D8,0x0071834F,120,24,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=24
+76,0x007192E2,0x007192E2,1,1,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=1
+77,0x0071F776,0x0071F777,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+78,0x0072488A,0x007248C9,64,64,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=64
+79,0x00724D66,0x00724D6C,7,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+80,0x007277AC,0x007277B6,11,7,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=7
+81,0x00727832,0x00727863,50,16,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=16
+82,0x0072826E,0x0072826F,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+83,0x00730A8C,0x00730B1D,146,128,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=128
+84,0x007310B0,0x007310B1,2,2,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=2
+85,0x007311B4,0x00731365,434,288,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=288
+86,0x00735F41,0x00735F41,1,1,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=1
+87,0x00735F82,0x00735FBC,59,15,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=15
+88,0x0073C618,0x0073C61B,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4
+89,0x007BFCFC,0x007BFCFF,4,4,UNEXPLAINED,,no definition in any local file reaches this address,not established,UNEXPLAINED=4

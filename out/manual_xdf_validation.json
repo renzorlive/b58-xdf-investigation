@@ -1,0 +1,21 @@
+{
+ "tables": 78,
+ "errors": 0,
+ "eqs": 27,
+ "unsafe_eqs": [],
+ "coverage": 2382,
+ "total_changed": 3821,
+ "address_less_axes": 59,
+ "format_checks": {
+  "xml decl + XDFFORMAT 1.80": true,
+  "XDFHEADER present": true,
+  "BASEOFFSET present": true,
+  "DEFAULTS present": true,
+  "REGION present": true,
+  "every CATEGORYMEM resolves": true,
+  "every table has title+description": true,
+  "z axes carry MATH/VAR": true,
+  "z axes are unsigned (datatype 0)": true,
+  "no table has duplicate uniqueid": true
+ }
+}

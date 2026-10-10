@@ -1,0 +1,10 @@
+{
+ "total_changed": 3821,
+ "explained": 1435,
+ "pct": 37.6,
+ "cell_only": 9309,
+ "axis_only": 1614,
+ "cell_and_axis": 0,
+ "overlapping_table_bytes": 0,
+ "unexplained": 2386
+}

@@ -1,0 +1,1787 @@
+[
+ {
+  "desc": "KL_NEL_TMOT",
+  "title": "Fan PWM based on coolant act to target delta",
+  "ref_addr": 6835432,
+  "delta": "0x3fff4",
+  "user_addr": "0x6c4cdc",
+  "rows": 1,
+  "cols": 12,
+  "esize": 8,
+  "size": 12,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "33"
+  ]
+ },
+ {
+  "desc": "KF_VSEWP_LLK_TANS",
+  "title": "Intake Waterpump flow ( IAT minus ambient temp, ambient temp)",
+  "ref_addr": 6836294,
+  "delta": "0x3fff4",
+  "user_addr": "0x6c503a",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1"
+  ]
+ },
+ {
+  "desc": "KL_MDRED_NKW",
+  "title": "Torque Reduction Factor (RPM)",
+  "ref_addr": 6837466,
+  "delta": "0x3fff4",
+  "user_addr": "0x6c54ce",
+  "rows": 1,
+  "cols": 6,
+  "esize": 8,
+  "size": 6,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "9"
+  ]
+ },
+ {
+  "desc": "K_TKW_NO",
+  "title": "Coolant target (normal)",
+  "ref_addr": 6837578,
+  "delta": "0x3fff4",
+  "user_addr": "0x6c553e",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "33"
+  ]
+ },
+ {
+  "desc": "KL_TKW_HI",
+  "title": "Coolant target (high)",
+  "ref_addr": 6837596,
+  "delta": "0x3fff4",
+  "user_addr": "0x6c5550",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "33"
+  ]
+ },
+ {
+  "desc": "KL_FLD_KKS",
+  "title": "Radiator Shutter Flap Control",
+  "ref_addr": 6845234,
+  "delta": "0x3fff0",
+  "user_addr": "0x6c7322",
+  "rows": 1,
+  "cols": 6,
+  "esize": 8,
+  "size": 6,
+  "match": 1.0,
+  "n_ties": 5,
+  "cat": [
+   "33"
+  ]
+ },
+ {
+  "desc": "KF_EDA_ANZ_SPORT_MD_EM1_IST",
+  "title": "Anpassung des Moments f\u00fcr die Performanceanzeige0",
+  "ref_addr": 6856074,
+  "delta": "0x3ff1e",
+  "user_addr": "0x6c9ca8",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "35"
+  ]
+ },
+ {
+  "desc": "KF_EDA_ANZ_SPORT_MDK_IST",
+  "title": "Performance gauge scaling",
+  "ref_addr": 6856146,
+  "delta": "0x3ff1e",
+  "user_addr": "0x6c9cf0",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "KF_FMS_HFMPL_MX",
+  "title": "Mass flow ratio (ceiling) for diag sensor pressure in CP",
+  "ref_addr": 6870110,
+  "delta": "0x3feb4",
+  "user_addr": "0x6cd312",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "37"
+  ]
+ },
+ {
+  "desc": "KF_FMS_HFMPL_MN",
+  "title": "Mass flow ratio (floor) for diag sensor pressure in CP",
+  "ref_addr": 6870182,
+  "delta": "0x3feb4",
+  "user_addr": "0x6cd35a",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "37"
+  ]
+ },
+ {
+  "desc": "BMWinjafs_fac_RatAirMax_T",
+  "title": "Max load for L-stoich Adapt.",
+  "ref_addr": 6876776,
+  "delta": "0x3feb4",
+  "user_addr": "0x6ced1c",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "size": 12,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_FRKKORRF_1",
+  "title": "Fuel scalar 1",
+  "ref_addr": 6876850,
+  "delta": "0x3feb0",
+  "user_addr": "0x6ced62",
+  "rows": 16,
+  "cols": 16,
+  "esize": 16,
+  "size": 512,
+  "match": 1.0,
+  "n_ties": 3,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_BSLGF",
+  "title": "Lambda ceiling component protection - filling",
+  "ref_addr": 6890898,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d2446",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_TA_VKSOLL",
+  "title": "EGT Pre-cat Ceiling for switch to component protection",
+  "ref_addr": 6891580,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d26f0",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_TA_IKSOLL",
+  "title": "EGT Cat Ceiling for switch to component protection",
+  "ref_addr": 6891612,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d2710",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_TA_ATLSOLL",
+  "title": "EGT Turbo Ceiling for switch to component protection",
+  "ref_addr": 6891644,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d2730",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWlpa_rat_EfpPwm_T",
+  "title": "EKP Ansteuerung Drehzahl in PWM",
+  "ref_addr": 6898022,
+  "delta": "0x3fe98",
+  "user_addr": "0x6d3ffe",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "size": 12,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWlpsd_p_RailDifMax_T",
+  "title": "Max rail diff",
+  "ref_addr": 6899698,
+  "delta": "0x3fe98",
+  "user_addr": "0x6d468a",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWgpfheat_p_RailInjSng_M",
+  "title": "GPF - Rail pressure setpoint for single injection, 1/1",
+  "ref_addr": 6900460,
+  "delta": "0x3f8c2",
+  "user_addr": "0x6d43ae",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 814,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "BMWgpfheat_p_RailInjMpl_M",
+  "title": "GPF - Rail pressure setpoint for multiple injection, 1/1",
+  "ref_addr": 6900532,
+  "delta": "0x3f87a",
+  "user_addr": "0x6d43ae",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 814,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "BMWgpfheat_tq_ResExhFlpClsd_T",
+  "title": "Momentenreserve, ab er die Abgasklappe aus akustischen Gr\u00fcnden geschlossen werden soll.0",
+  "ref_addr": 6902012,
+  "delta": "0x3fdb0",
+  "user_addr": "0x6d4eac",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "size": 16,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KF_LAMIN_H",
+  "title": "Lambda Limit (Rich)",
+  "ref_addr": 6912272,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d77c4",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_FTRANSVL",
+  "title": "Throttle aggression in overload",
+  "ref_addr": 6914622,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d80f2",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "KF_ASPR_NORM_UESP_PF1",
+  "title": "Vanos EX Spool (warm) 1",
+  "ref_addr": 6916570,
+  "delta": "0x3fe34",
+  "user_addr": "0x6d880e",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ASPR_NORM_WARM_PF2",
+  "title": "Vanos EX (warm) 2",
+  "ref_addr": 6917436,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d8bf0",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ASPR_NORM_WARM_PF1",
+  "title": "Vanos EX (warm) 1",
+  "ref_addr": 6917820,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d8d70",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ASPR_NORM_KALT_PF2",
+  "title": "Vanos EX (cold) 2",
+  "ref_addr": 6918204,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d8ef0",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ASPR_NORM_KALT_PF1",
+  "title": "Vanos EX (cold) 1",
+  "ref_addr": 6918588,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d9070",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "KF_ESPR_NORM_UESP_PF1",
+  "title": "Vanos IN Spool (warm) 1",
+  "ref_addr": 6919380,
+  "delta": "0x3fe34",
+  "user_addr": "0x6d9308",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ESPR_NORM_WARM_PF2",
+  "title": "Vanos IN (warm) 2",
+  "ref_addr": 6920246,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d96ea",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ESPR_NORM_WARM_PF1",
+  "title": "Vanos IN (warm) 1",
+  "ref_addr": 6920630,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d986a",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ESPR_NORM_KALT_PF2",
+  "title": "Vanos IN (cold) 2",
+  "ref_addr": 6921014,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d99ea",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_ESPR_NORM_KALT_PF1",
+  "title": "Vanos IN (cold) 1",
+  "ref_addr": 6921398,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d9b6a",
+  "rows": 12,
+  "cols": 16,
+  "esize": 16,
+  "size": 384,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "KL_RF_MAX_UESP",
+  "title": "Max load (spool)",
+  "ref_addr": 6922002,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d9dc6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "KL_RF_MAX",
+  "title": "Max load (main)",
+  "ref_addr": 6922026,
+  "delta": "0x3feb4",
+  "user_addr": "0x6d9dde",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "BMWls_rf_MaxFuOctIntkT_M",
+  "title": "Max load (octane)",
+  "ref_addr": 6922210,
+  "delta": "0x3fe14",
+  "user_addr": "0x6d9df6",
+  "rows": 8,
+  "cols": 10,
+  "esize": 16,
+  "size": 160,
+  "match": 1.0,
+  "n_ties": 242,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "BMWls_rf_MaxFuOctIntkTSpt_M",
+  "title": "Max load (octane - sport)",
+  "ref_addr": 6922370,
+  "delta": "0x3fd74",
+  "user_addr": "0x6d9df6",
+  "rows": 8,
+  "cols": 10,
+  "esize": 16,
+  "size": 160,
+  "match": 1.0,
+  "n_ties": 242,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "BMWls_pct_FiMaxIgOfs_M",
+  "title": "Max load (timing correction)",
+  "ref_addr": 6922602,
+  "delta": "0x3fc8c",
+  "user_addr": "0x6d9df6",
+  "rows": 8,
+  "cols": 10,
+  "esize": 16,
+  "size": 160,
+  "match": 1.0,
+  "n_ties": 242,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "BMWls_pct_FiMaxIgOfsSpt_M",
+  "title": "Max load (timing correction - sport)",
+  "ref_addr": 6922762,
+  "delta": "0x3fbec",
+  "user_addr": "0x6d9df6",
+  "rows": 8,
+  "cols": 10,
+  "esize": 16,
+  "size": 160,
+  "match": 1.0,
+  "n_ties": 242,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "For naturally aspirated operation, should not exceed 100% KL_LAMX",
+  "title": "Max naturally aspirated volumetric efficiency",
+  "ref_addr": 6923058,
+  "delta": "0x3feb4",
+  "user_addr": "0x6da1e6",
+  "rows": 1,
+  "cols": 18,
+  "esize": 16,
+  "size": 36,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "9"
+  ]
+ },
+ {
+  "desc": "KF_HUB_GRDMX",
+  "title": "Max valve lift (10ms)",
+  "ref_addr": 6924208,
+  "delta": "0x3feb4",
+  "user_addr": "0x6da664",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "KF_EHUB_MX",
+  "title": "Kennfeld maximaler Einlassventilhub",
+  "ref_addr": 6924280,
+  "delta": "0x3feb4",
+  "user_addr": "0x6da6ac",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "KF_HUBESTM",
+  "title": "Valvetronic at start (tmot)",
+  "ref_addr": 6925266,
+  "delta": "0x3feb4",
+  "user_addr": "0x6daa86",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "GKF_EHUB_NORM_WARM_LAST",
+  "title": "Valve lift (main)",
+  "ref_addr": 6929682,
+  "delta": "0x3feb4",
+  "user_addr": "0x6dbbc6",
+  "rows": 20,
+  "cols": 20,
+  "esize": 16,
+  "size": 800,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "19"
+  ]
+ },
+ {
+  "desc": "KF_PRAIL_H_K",
+  "title": "Rail Pressure HOMOGEN COLD - with activated VVT (GD), 1/1",
+  "ref_addr": 6936410,
+  "delta": "0x3febc",
+  "user_addr": "0x6dd616",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_PRAIL_HGD_K",
+  "title": "Rail Pressure HOMOGEN COLD - with deactivated VVT (GD)",
+  "ref_addr": 6936538,
+  "delta": "0x3fe3c",
+  "user_addr": "0x6dd616",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_PRAIL_HGD",
+  "title": "Rail Pressure HOMOGEN - with deactivated VVT (GD)",
+  "ref_addr": 6936666,
+  "delta": "0x3febc",
+  "user_addr": "0x6dd716",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_PRAIL_H",
+  "title": "Rail pressure homogen",
+  "ref_addr": 6936922,
+  "delta": "0x3fdbc",
+  "user_addr": "0x6dd716",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWtchdiag_pct_WgPLo_M",
+  "title": "PID correction ceiling",
+  "ref_addr": 6938054,
+  "delta": "0x3fe22",
+  "user_addr": "0x6ddbe8",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1",
+   "3"
+  ]
+ },
+ {
+  "desc": "BMWtchdiag_pct_WgPHi_M",
+  "title": "PID correction floor",
+  "ref_addr": 6938086,
+  "delta": "0x3fe22",
+  "user_addr": "0x6ddc08",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1",
+   "3"
+  ]
+ },
+ {
+  "desc": "BMWtchsp_rat_p_CmprPmp_T",
+  "title": "Boost set limit",
+  "ref_addr": 6939170,
+  "delta": "0x3fe22",
+  "user_addr": "0x6de044",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "size": 16,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1"
+  ]
+ },
+ {
+  "desc": "BMWtchsp_rat_p_CmprMax_M",
+  "title": "Boost Limit multiplier",
+  "ref_addr": 6939186,
+  "delta": "0x3fe22",
+  "user_addr": "0x6de054",
+  "rows": 6,
+  "cols": 8,
+  "esize": 16,
+  "size": 96,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1"
+  ]
+ },
+ {
+  "desc": "KF_MDIOP_1_TQE",
+  "title": "Load to torque",
+  "ref_addr": 6958512,
+  "delta": "0x3fe12",
+  "user_addr": "0x6e2bc2",
+  "rows": 20,
+  "cols": 18,
+  "esize": 16,
+  "size": 720,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "13"
+  ]
+ },
+ {
+  "desc": "KL_T_IKAT_SOUND_MX",
+  "title": "Max. cat temp for burble after X uses",
+  "ref_addr": 6961754,
+  "delta": "0x3fd90",
+  "user_addr": "0x6e37ea",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KL_NKW_SOUND_MX",
+  "title": "Max. rpm for burble per gear",
+  "ref_addr": 6961762,
+  "delta": "0x3fd90",
+  "user_addr": "0x6e37f2",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "size": 16,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KL_NKW_SOUND_MN",
+  "title": "Min. rpm for burble per gear",
+  "ref_addr": 6961778,
+  "delta": "0x3fd90",
+  "user_addr": "0x6e3802",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "size": 16,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KL_TD_SOUND_MX_SPORT",
+  "title": "Burble duration sport",
+  "ref_addr": 6961802,
+  "delta": "0x3fd90",
+  "user_addr": "0x6e381a",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KL_TD_SOUND_MX_FREI",
+  "title": "Burble duration sport (custom)",
+  "ref_addr": 6961810,
+  "delta": "0x3fd90",
+  "user_addr": "0x6e3822",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KL_TD_SOUND_MX",
+  "title": "Burble duration (base)",
+  "ref_addr": 6961818,
+  "delta": "0x3fd90",
+  "user_addr": "0x6e382a",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "BMWtqe_tqc_FlApplStgNorm_T",
+  "title": "Torque request ceiling",
+  "ref_addr": 6975218,
+  "delta": "0x3f9ea",
+  "user_addr": "0x6e68dc",
+  "rows": 1,
+  "cols": 18,
+  "esize": 16,
+  "size": 36,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "9"
+  ]
+ },
+ {
+  "desc": "KF_MD_RES_NST_KEY",
+  "title": "Moment reserve after start",
+  "ref_addr": 6976804,
+  "delta": "0x3f9e8",
+  "user_addr": "0x6e6f0c",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "size": 32,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KF_MDR_ABV_SPO_HS",
+  "title": "Relative torque request sport MT 1",
+  "ref_addr": 6978552,
+  "delta": "0x3f9d6",
+  "user_addr": "0x6e75ce",
+  "rows": 12,
+  "cols": 10,
+  "esize": 16,
+  "size": 240,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "KF_MDR_ABV_SPO2_HS",
+  "title": "Relative torque request sport MT 2",
+  "ref_addr": 6978792,
+  "delta": "0x3f9d6",
+  "user_addr": "0x6e76be",
+  "rows": 12,
+  "cols": 10,
+  "esize": 16,
+  "size": 240,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "KF_MDR_ABV_SPO2",
+  "title": "Relative torque request sport 2",
+  "ref_addr": 6979032,
+  "delta": "0x3f9d6",
+  "user_addr": "0x6e77ae",
+  "rows": 12,
+  "cols": 10,
+  "esize": 16,
+  "size": 240,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "KF_MDR_ABV_SPO",
+  "title": "Relative torque request sport",
+  "ref_addr": 6979272,
+  "delta": "0x3f9d6",
+  "user_addr": "0x6e789e",
+  "rows": 12,
+  "cols": 10,
+  "esize": 16,
+  "size": 240,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "K_TKW_WA",
+  "title": "Coolant target (warmup-vWM)",
+  "ref_addr": 6998760,
+  "delta": "0x3f9ce",
+  "user_addr": "0x6ec4b6",
+  "rows": 1,
+  "cols": 2,
+  "esize": 16,
+  "size": 4,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "33"
+  ]
+ },
+ {
+  "desc": "K_TKW_MX",
+  "title": "Coolant target (misc)",
+  "ref_addr": 6998772,
+  "delta": "0x3f9ce",
+  "user_addr": "0x6ec4c2",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "33"
+  ]
+ },
+ {
+  "desc": "KF_FDZWT_PF2",
+  "title": "Temp.  based correction factor 2",
+  "ref_addr": 6999442,
+  "delta": "0x3f9ce",
+  "user_addr": "0x6ec760",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "7"
+  ]
+ },
+ {
+  "desc": "KF_FDZWT_PF1",
+  "title": "Temp.  based correction factor 1",
+  "ref_addr": 6999514,
+  "delta": "0x3f986",
+  "user_addr": "0x6ec760",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "7"
+  ]
+ },
+ {
+  "desc": "BMWshl_ti_DlyMtSfu_T",
+  "title": "MT shift delay",
+  "ref_addr": 7005800,
+  "delta": "0x3f95e",
+  "user_addr": "0x6edfc6",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "size": 12,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "BMWchas_lam_InjSng_M",
+  "title": "Lambda setpoint for single Injection",
+  "ref_addr": 7009060,
+  "delta": "0x3f988",
+  "user_addr": "0x6eecac",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "size": 200,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWchas_lam_InjSngThr_M",
+  "title": "Lambda setpoint for single injection at throttled operation mode",
+  "ref_addr": 7009260,
+  "delta": "0x3f988",
+  "user_addr": "0x6eed74",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "size": 200,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWchas_lam_InjMpl_M",
+  "title": "Lambda setpoint for multiple Injection",
+  "ref_addr": 7009524,
+  "delta": "0x3f988",
+  "user_addr": "0x6eee7c",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "size": 200,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWchas_lam_InjMplThr_M",
+  "title": "Lambda setpoint for multiple Injection at throttled operation mode",
+  "ref_addr": 7009724,
+  "delta": "0x3f988",
+  "user_addr": "0x6eef44",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "size": 200,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWchas_p_RailInjSng_M",
+  "title": "Rail pressure setpoint for single injection",
+  "ref_addr": 7009988,
+  "delta": "0x3f988",
+  "user_addr": "0x6ef04c",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "size": 128,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWchas_p_RailInjMpl_M",
+  "title": "Rail pressure setpoint for multiple injection",
+  "ref_addr": 7010116,
+  "delta": "0x3f97a",
+  "user_addr": "0x6ef0be",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 8,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "BMWchas_tq_ResExhFlpClsd_T",
+  "title": "Momentenreserve, ab er die Abgasklappe aus akustischen Gr\u00fcnden geschlossen werden soll.",
+  "ref_addr": 7010188,
+  "delta": "0x3f988",
+  "user_addr": "0x6ef114",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "size": 16,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "BMWinjmon_fac_HppEff_M",
+  "title": "Injection map Factor Efficiency High-pressure pump",
+  "ref_addr": 7016650,
+  "delta": "0x3f986",
+  "user_addr": "0x6f0a50",
+  "rows": 4,
+  "cols": 8,
+  "esize": 16,
+  "size": 64,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KL_RFMIN_KRSTSYS",
+  "title": "Min load for load limiting from fueling",
+  "ref_addr": 7016886,
+  "delta": "0x3f986",
+  "user_addr": "0x6f0b3c",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "size": 16,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KL_MDG_MAX_GANG_HS",
+  "title": "Max. torque at trans MT",
+  "ref_addr": 7047544,
+  "delta": "0x3fcfc",
+  "user_addr": "0x6f8674",
+  "rows": 1,
+  "cols": 10,
+  "esize": 16,
+  "size": 20,
+  "match": 1.0,
+  "n_ties": 9,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "KL_MD_K_MAX_VL_HS",
+  "title": "Drehzahlabh\u00e4ngige Vollastlinie des Verbrennungsmotors (Nkw_opt) f\u00fcr Handschalter",
+  "ref_addr": 7049936,
+  "delta": "0x3f9d0",
+  "user_addr": "0x6f8ca0",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 1.0,
+  "n_ties": 13,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "KL_MD_K_MAX_VL",
+  "title": "Drehzahlabh\u00e4ngige Vollastlinie des Verbrennungsmotors (Nkw_opt)",
+  "ref_addr": 7049960,
+  "delta": "0x3f9b8",
+  "user_addr": "0x6f8ca0",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 1.0,
+  "n_ties": 13,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "KL_MD_K_MAX_BST_HS",
+  "title": "Drehzahlabh\u00e4ngige Boost-Kennlinie des Verbrennungsmotors (Nkw_opt) f\u00fcr Handschalter",
+  "ref_addr": 7050032,
+  "delta": "0x3f9b8",
+  "user_addr": "0x6f8ce8",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 1.0,
+  "n_ties": 2,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "KL_MD_K_MAX_BST",
+  "title": "Drehzahlabh\u00e4ngige Boost-Kennlinie des Verbrennungsmotors (Nkw_opt)",
+  "ref_addr": 7050056,
+  "delta": "0x3f9d0",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "KF_ST_RKBAS_VVT",
+  "title": "Kennfeld Basis-Rk Menge VVT Betrieb",
+  "ref_addr": 7053628,
+  "delta": "0x3f9cc",
+  "user_addr": "0x6f9b08",
+  "rows": 12,
+  "cols": 12,
+  "esize": 16,
+  "size": 288,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_ST_RKBAS_GD",
+  "title": "Kennfeld Basis-Rk Menge gedrosselter Betrieb",
+  "ref_addr": 7054078,
+  "delta": "0x3f9cc",
+  "user_addr": "0x6f9cca",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "size": 200,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KL_LA_SBL",
+  "title": "Burble AFR",
+  "ref_addr": 7054794,
+  "delta": "0x3f9c0",
+  "user_addr": "0x6f9f8a",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "size": 12,
+  "match": 1.0,
+  "n_ties": 482,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KF_LABAS_2",
+  "title": "Fuel (Bank 2)",
+  "ref_addr": 7055418,
+  "delta": "0x3f9c0",
+  "user_addr": "0x6fa1fa",
+  "rows": 17,
+  "cols": 18,
+  "esize": 16,
+  "size": 612,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_LABAS_1",
+  "title": "Fuel (Bank 1)",
+  "ref_addr": 7056030,
+  "delta": "0x3f9c0",
+  "user_addr": "0x6fa45e",
+  "rows": 17,
+  "cols": 18,
+  "esize": 16,
+  "size": 612,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_FMS_DKPSRPL_MX",
+  "title": "Mass flow ratio (ceiling) for diag MAF",
+  "ref_addr": 7059256,
+  "delta": "0x3f9de",
+  "user_addr": "0x6fb116",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "37"
+  ]
+ },
+ {
+  "desc": "KF_FMS_DKPSRPL_MN",
+  "title": "Mass flow ratio (floor) for diag MAF",
+  "ref_addr": 7059328,
+  "delta": "0x3f9de",
+  "user_addr": "0x6fb15e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "size": 72,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "37"
+  ]
+ },
+ {
+  "desc": "K_EDA_P_ANZ_SPORT_BS_SCAL_CODE",
+  "title": "Perf display scaling - power",
+  "ref_addr": 7065501,
+  "delta": "0x3f8fc",
+  "user_addr": "0x6fc899",
+  "rows": 1,
+  "cols": 4,
+  "esize": 8,
+  "size": 4,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1"
+  ]
+ },
+ {
+  "desc": "K_EDA_MD_ANZ_BS_SCAL_CODE",
+  "title": "Perf display scaling - torque",
+  "ref_addr": 7065505,
+  "delta": "0x3f8fc",
+  "user_addr": "0x6fc89d",
+  "rows": 1,
+  "cols": 5,
+  "esize": 8,
+  "size": 5,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "1"
+  ]
+ },
+ {
+  "desc": "BMWchas_st_OpmBasc_M",
+  "title": "Basic catalyst heating mode wish",
+  "ref_addr": 7065948,
+  "delta": "0x3f8f8",
+  "user_addr": "0x6fca54",
+  "rows": 8,
+  "cols": 8,
+  "esize": 8,
+  "size": 64,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KL_ENA_NREG_DSC",
+  "title": "Rev match active depending on DSC Mode",
+  "ref_addr": 7074856,
+  "delta": "0x3f870",
+  "user_addr": "0x6fec98",
+  "rows": 1,
+  "cols": 6,
+  "esize": 8,
+  "size": 6,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "BMWtqe_b_SptDet4NoiseAcvn_M",
+  "title": "Activation burble based on DSC and Mode",
+  "ref_addr": 7080168,
+  "delta": "0x3f814",
+  "user_addr": "0x7000fc",
+  "rows": 4,
+  "cols": 12,
+  "esize": 8,
+  "size": 48,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "BMWtqe_b_Clu4NoiseDeac_T",
+  "title": "Deactivate burble by clutch use",
+  "ref_addr": 7080216,
+  "delta": "0x3f814",
+  "user_addr": "0x70012c",
+  "rows": 1,
+  "cols": 12,
+  "esize": 8,
+  "size": 12,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KF_DZWT_PF2",
+  "title": "Temp. based correction 2 (main)",
+  "ref_addr": 7107128,
+  "delta": "0x3f898",
+  "user_addr": "0x706ad0",
+  "rows": 16,
+  "cols": 20,
+  "esize": 8,
+  "size": 320,
+  "match": 1.0,
+  "n_ties": 1,
+  "cat": [
+   "7"
+  ]
+ },
+ {
+  "desc": "AKRGRCC",
+  "title": "AKRGRCC",
+  "ref_addr": 7227174,
+  "delta": "0x3f82c",
+  "user_addr": "0x723f52",
+  "rows": 10,
+  "cols": 12,
+  "esize": 8,
+  "size": 120,
+  "match": 1.0,
+  "n_ties": 29,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "AKRGRCCM",
+  "title": "AKRGRCCM",
+  "ref_addr": 7228098,
+  "delta": "0x3fffa",
+  "user_addr": "0x724abc",
+  "rows": 10,
+  "cols": 12,
+  "esize": 8,
+  "size": 120,
+  "match": 1.0,
+  "n_ties": 26,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "AKRGRCO",
+  "title": "AKRGRCO",
+  "ref_addr": 7228626,
+  "delta": "0x3fdea",
+  "user_addr": "0x724abc",
+  "rows": 10,
+  "cols": 12,
+  "esize": 8,
+  "size": 120,
+  "match": 1.0,
+  "n_ties": 26,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "AKRGRCOAT",
+  "title": "AKRGRCOAT",
+  "ref_addr": 7228770,
+  "delta": "0x3fd5a",
+  "user_addr": "0x724abc",
+  "rows": 10,
+  "cols": 12,
+  "esize": 8,
+  "size": 120,
+  "match": 1.0,
+  "n_ties": 26,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "AKRGRCOATM",
+  "title": "AKRGRCOATM",
+  "ref_addr": 7228914,
+  "delta": "0x3fcca",
+  "user_addr": "0x724abc",
+  "rows": 10,
+  "cols": 12,
+  "esize": 8,
+  "size": 120,
+  "match": 1.0,
+  "n_ties": 26,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "AKRGRCOM",
+  "title": "AKRGRCOM",
+  "ref_addr": 7229222,
+  "delta": "0x3fb96",
+  "user_addr": "0x724abc",
+  "rows": 10,
+  "cols": 12,
+  "esize": 8,
+  "size": 120,
+  "match": 1.0,
+  "n_ties": 26,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "VMINAKR",
+  "title": "Exhaust flap min speed to control flap with pedal",
+  "ref_addr": 7230108,
+  "delta": "0x3f820",
+  "user_addr": "0x724abc",
+  "rows": 1,
+  "cols": 5,
+  "esize": 8,
+  "size": 5,
+  "match": 1.0,
+  "n_ties": 346,
+  "cat": [
+   "26"
+  ]
+ },
+ {
+  "desc": "KLPHDRTF",
+  "title": "HPFP HDR Temperature Factor P-Component",
+  "ref_addr": 7272109,
+  "delta": "0x413b0",
+  "user_addr": "0x730a5d",
+  "rows": 1,
+  "cols": 4,
+  "esize": 8,
+  "size": 4,
+  "match": 1.0,
+  "n_ties": 3,
+  "cat": [
+   "5"
+  ]
+ },
+ {
+  "desc": "KF_ENA_NREG_GANG_SYN",
+  "title": "Rev match",
+  "ref_addr": 7074864,
+  "delta": "0x3f870",
+  "user_addr": "0x6feca0",
+  "rows": 9,
+  "cols": 9,
+  "esize": 8,
+  "size": 81,
+  "match": 0.8148,
+  "n_ties": 5,
+  "cat": [
+   "15"
+  ]
+ },
+ {
+  "desc": "BMWtchctr_rat_p_ComprLimPctl_T",
+  "title": "Min. boost setpoint to cancel PIDs by decreasing target pressure",
+  "ref_addr": 7046302,
+  "delta": "0x3fd5e",
+  "user_addr": "0x6f81fc",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "size": 24,
+  "match": 0.5,
+  "n_ties": 19,
+  "cat": [
+   "1"
+  ]
+ },
+ {
+  "desc": "KLVRABSCH",
+  "title": "Kennlinie f\u00fcr Vmax-Regler-Abschaltschwelle",
+  "ref_addr": 7304294,
+  "delta": "0x3f956",
+  "user_addr": "0x736dbc",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "size": 8,
+  "match": 0.25,
+  "n_ties": 2021,
+  "cat": [
+   "35"
+  ]
+ },
+ {
+  "desc": "KL_MDG_MAX_GANG_AT",
+  "title": "Max. torque at trans AT",
+  "ref_addr": 7047564,
+  "delta": "0x3fce2",
+  "user_addr": "0x6f866e",
+  "rows": 1,
+  "cols": 10,
+  "esize": 16,
+  "size": 20,
+  "match": 0.05,
+  "n_ties": 10,
+  "cat": [
+   "9",
+   "11"
+  ]
+ },
+ {
+  "desc": "KF_ZW_S_PF2",
+  "title": "Timing (cold) 2",
+  "ref_addr": 7092160,
+  "delta": "0x3fa50",
+  "user_addr": "0x703210",
+  "rows": 16,
+  "cols": 20,
+  "esize": 8,
+  "size": 320,
+  "match": 0.0375,
+  "n_ties": 1,
+  "cat": [
+   "7"
+  ]
+ }
+]

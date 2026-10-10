@@ -1,0 +1,10 @@
+{
+ "SP15 verified (73)": 1458,
+ "legacy byte-identical (43)": 1392,
+ "K_MAX family (6)": 96,
+ "combined deduplicated": 1904,
+ "total changed": 3821,
+ "combined pct": 49.8,
+ "overlap sp15&legacy": 4664,
+ "overlap sp15&kmax": 144
+}

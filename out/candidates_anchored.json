@@ -1,0 +1,2086 @@
+[
+ {
+  "title": "Base lambda in homogeneous mode bank 1",
+  "desc": "KF_LABAS_1",
+  "delta": "0x41724",
+  "user_addr": "0x6fa45e",
+  "rows": 17,
+  "cols": 18,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6fa6f0",
+   "y": "0x6fa6ce"
+  },
+  "axis_pts": {
+   "x": 18,
+   "y": 17
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 332,
+  "size": 612,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Base lambda in homogeneous mode bank 2",
+  "desc": "KF_LABAS_2",
+  "delta": "0x41724",
+  "user_addr": "0x6fa1fa",
+  "rows": 17,
+  "cols": 18,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6fa6f0",
+   "y": "0x6fa6ce"
+  },
+  "axis_pts": {
+   "x": 18,
+   "y": 17
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 301,
+  "size": 612,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda setpoint for multiple injection at throttled operation mode",
+  "desc": "BMWchas_lam_InjMplThr_M",
+  "delta": "0x4141e",
+  "user_addr": "0x6eef0c",
+  "rows": 10,
+  "cols": 10,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6efbd4",
+   "y": "0x6ef940"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda setpoint for single injection at throttled operation mode",
+  "desc": "BMWchas_lam_InjSngThr_M",
+  "delta": "0x41456",
+  "user_addr": "0x6eed74",
+  "rows": 10,
+  "cols": 10,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6efbd4",
+   "y": "0x6ef940"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda setpoint for single injection",
+  "desc": "BMWchas_lam_InjSng_M",
+  "delta": "0x41456",
+  "user_addr": "0x6eecac",
+  "rows": 10,
+  "cols": 10,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6efbc0",
+   "y": "0x6ef92c"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lower mass flow ratio for HFM diagnostics Mshfm vs. Mszyl_diag",
+  "desc": "KF_FMS_HFMPL_MN",
+  "delta": "0x410ec",
+  "user_addr": "0x6cd34e",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6cd3ba",
+   "y": "0x6cd3a2"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "1.99996948242188",
+  "tuned": 72,
+  "size": 72,
+  "cats": [
+   "16"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Upper mass flow ratio for HFM diagnostics Mshfm vs. Mszyl_diag",
+  "desc": "KF_FMS_HFMPL_MX",
+  "delta": "0x410f8",
+  "user_addr": "0x6cd312",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6cd3ba",
+   "y": "0x6cd3a2"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "1.99996948242188",
+  "tuned": 60,
+  "size": 72,
+  "cats": [
+   "16"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda setpoint for multiple injection",
+  "desc": "BMWchas_lam_InjMpl_M",
+  "delta": "0x4141e",
+  "user_addr": "0x6eee44",
+  "rows": 10,
+  "cols": 10,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6efbc0",
+   "y": "0x6ef92c"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 38,
+  "size": 200,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map start angle injection event 1 preventive super-knock",
+  "desc": "KF_PHA_H_B1_SK_PRE",
+  "delta": "0x410f8",
+  "user_addr": "0x6d0144",
+  "rows": 12,
+  "cols": 10,
+  "anchor_dist": 5086,
+  "axes": {
+   "x": "0x6d06bc",
+   "y": "0x6d0684"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 12
+  },
+  "min": "-768",
+  "max": "767.9765625",
+  "tuned": 36,
+  "size": 240,
+  "cats": [
+   "10"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map start angle injection event 1 warm",
+  "desc": "KF_PHA_H_B1_W",
+  "delta": "0x410f8",
+  "user_addr": "0x6cffd4",
+  "rows": 12,
+  "cols": 10,
+  "anchor_dist": 4718,
+  "axes": {
+   "x": "0x6d06bc",
+   "y": "0x6d0684"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 12
+  },
+  "min": "-768",
+  "max": "767.9765625",
+  "tuned": 36,
+  "size": 240,
+  "cats": [
+   "8"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Maximum relative filling",
+  "desc": "KL_LAMX",
+  "delta": "0x410c4",
+  "user_addr": "0x6da1e6",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 1032,
+  "axes": {
+   "x": "0x6da20a"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "0",
+  "max": "327.67",
+  "tuned": 36,
+  "size": 36,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Controlled variable upper threshold",
+  "desc": "BMWtchdiag_pct_WgPLo_M",
+  "delta": "0x411ea",
+  "user_addr": "0x6ddbe8",
+  "rows": 4,
+  "cols": 4,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6ddcac",
+   "y": "0x6ddc9c"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "min": "-100",
+  "max": "99.9969482421875",
+  "tuned": 25,
+  "size": 32,
+  "cats": [
+   "22"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Curve maximum permissible filling over engine speed",
+  "desc": "KL_RF_MAX",
+  "delta": "0x410c4",
+  "user_addr": "0x6d9dde",
+  "rows": 1,
+  "cols": 12,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6da1ce"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "14"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Curve maximum permissible filling over engine speed during scavenging",
+  "desc": "KL_RF_MAX_UESP",
+  "delta": "0x410c4",
+  "user_addr": "0x6d9dc6",
+  "rows": 1,
+  "cols": 12,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6da1b6"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "14"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Rail pressure setpoint for multiple injection",
+  "desc": "BMWchas_p_RailInjMpl_M",
+  "delta": "0x41456",
+  "user_addr": "0x6ef0cc",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6efbb4",
+   "y": "0x6ef7d0"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Rail pressure setpoint for single injection",
+  "desc": "BMWchas_p_RailInjSng_M",
+  "delta": "0x41456",
+  "user_addr": "0x6ef04c",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6efba4",
+   "y": "0x6ef7c0"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Torque reserve above which the exhaust flap should be closed for acoustic reasons",
+  "desc": "BMWchas_tq_ResExhFlpClsd_T",
+  "delta": "0x41456",
+  "user_addr": "0x6ef114",
+  "rows": 1,
+  "cols": 8,
+  "anchor_dist": 72,
+  "axes": {
+   "x": "0x6efac4"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 16,
+  "cats": [
+   "6"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Lambda lean best torque for limiting the component protection lambda",
+  "desc": "BMWext_lam_CptPronMinLeanTq_M",
+  "delta": "0x4123c",
+  "user_addr": "0x6d2466",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 32,
+  "axes": {
+   "x": "0x6d2566",
+   "y": "0x6d2520"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Curve upper limit Rf for stoichiometric lambda adaptation",
+  "desc": "BMWinjafs_fac_RatAirMax_T",
+  "delta": "0x410f8",
+  "user_addr": "0x6ced1c",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6ced34"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "14"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Electric fuel pump speed setpoint for start ambient",
+  "desc": "BMWlpa_n_EfpEngStrtAmb_M",
+  "delta": "0x4123c",
+  "user_addr": "0x6d40be",
+  "rows": 4,
+  "cols": 4,
+  "anchor_dist": 1484,
+  "axes": {
+   "x": "0x6d40ea",
+   "y": "0x6d40e2"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "min": "0",
+  "max": "65535",
+  "tuned": 0,
+  "size": 32,
+  "cats": [
+   "2"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Electric fuel pump speed control via PWM",
+  "desc": "BMWlpa_rat_EfpPwm_T",
+  "delta": "0x4123c",
+  "user_addr": "0x6d3ffe",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 1676,
+  "axes": {
+   "x": "0x6d410e"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "15"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Curve maximum pressure before high-pressure pump depending on flow rate",
+  "desc": "BMWlpsc_p_HppMax_T",
+  "delta": "0x41472",
+  "user_addr": "0x6f1b88",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 4172,
+  "axes": {
+   "x": "0x6f1c44"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "65.535",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "10"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map volume flow",
+  "desc": "BMWlpsc_volf_FuEjrPmp_M",
+  "delta": "0x4123c",
+  "user_addr": "0x6d4506",
+  "rows": 4,
+  "cols": 8,
+  "anchor_dist": 388,
+  "axes": {
+   "x": "0x6d4606"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 64,
+  "cats": [
+   "10"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Curve filling limitation depending on ignition angle retard in sport mode",
+  "desc": "BMWls_pct_FiMaxIgOfsSpt_M",
+  "delta": "0x410c4",
+  "user_addr": "0x6da0be",
+  "rows": 8,
+  "cols": 10,
+  "anchor_dist": 736,
+  "axes": {
+   "x": "0x6da1a2",
+   "y": "0x6da16e"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 8
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 160,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Curve filling limitation depending on ignition angle retard",
+  "desc": "BMWls_pct_FiMaxIgOfs_M",
+  "delta": "0x410c4",
+  "user_addr": "0x6da01e",
+  "rows": 8,
+  "cols": 10,
+  "anchor_dist": 576,
+  "axes": {
+   "x": "0x6da1a2",
+   "y": "0x6da16e"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 8
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 160,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Filling cap for temporary limitation during launch control",
+  "desc": "BMWls_rf_MaxModEng_M",
+  "delta": "0x410c4",
+  "user_addr": "0x6d9df6",
+  "rows": 8,
+  "cols": 10,
+  "anchor_dist": 24,
+  "axes": {
+   "x": "0x6da1a2",
+   "y": "0x6da16e"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 8
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 160,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Correction factor for D-component of power-based boost pressure controller",
+  "desc": "BMWtchctr_fac_DpDyn_T",
+  "delta": "0x416be",
+  "user_addr": "0x6f70e2",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6f7572"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "22"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Correction factor for D-component of power-based boost pressure controller",
+  "desc": "BMWtchctr_fac_Dp_T",
+  "delta": "0x416be",
+  "user_addr": "0x6f70d6",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6f7566"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "22"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Exhaust gas temperature during dynamic load changes for physical turbocharger feedforward control",
+  "desc": "BMWtchctr_t_ExGasMdlScav_M",
+  "delta": "0x416be",
+  "user_addr": "0x6f7844",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 88,
+  "axes": {
+   "x": "0x6f7aac",
+   "y": "0x6f7a44"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "7"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Exhaust gas temperature during dynamic load changes for physical turbocharger feedforward control",
+  "desc": "BMWtchctr_t_ExGasMdl_M",
+  "delta": "0x416be",
+  "user_addr": "0x6f77fc",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 160,
+  "axes": {
+   "x": "0x6f7aa0",
+   "y": "0x6f7a38"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "7"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Reduction factor for overboost torque via intake air temperature",
+  "desc": "BMWtchob_fac_tq_Delt_T",
+  "delta": "0x411ea",
+  "user_addr": "0x6ddd7a",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 370,
+  "axes": {
+   "x": "0x6dde22"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "0.999984741210938",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "2"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Setpoint for wastegate position during blow-off valve active",
+  "desc": "BMWtchout_pct_WgBlwOff_T",
+  "delta": "0x411ea",
+  "user_addr": "0x6ddfec",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 88,
+  "axes": {
+   "x": "0x6de02c"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "99.9984741210938",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "22"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Relative filling limitation for turbocharger variants in fault condition (b_atlerr_md)",
+  "desc": "BMWtchsp_rf_Liho_T",
+  "delta": "0x411ea",
+  "user_addr": "0x6de0fc",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 168,
+  "axes": {
+   "x": "0x6de160"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map exhaust spread setpoint (normal operation, cold, path 1)",
+  "desc": "GKF_ASPR_NORM_KALT_PF1",
+  "delta": "0x410c4",
+  "user_addr": "0x6d9070",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9270",
+   "y": "0x6d9208"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map exhaust spread setpoint (normal operation, cold, load, path 2)",
+  "desc": "GKF_ASPR_NORM_KALT_PF2",
+  "delta": "0x410c4",
+  "user_addr": "0x6d8ef0",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9250",
+   "y": "0x6d91f0"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map exhaust spread setpoint (normal operation, warm, path 1)",
+  "desc": "GKF_ASPR_NORM_WARM_PF1",
+  "delta": "0x410c4",
+  "user_addr": "0x6d8d70",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9270",
+   "y": "0x6d9208"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map exhaust spread setpoint (normal operation, warm, path 2)",
+  "desc": "GKF_ASPR_NORM_WARM_PF2",
+  "delta": "0x410c4",
+  "user_addr": "0x6d8bf0",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9250",
+   "y": "0x6d91f0"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map intake valve lift setpoint in normal operation, warm, load",
+  "desc": "GKF_EHUB_NORM_WARM_LAST",
+  "delta": "0x410c4",
+  "user_addr": "0x6dbbc6",
+  "rows": 20,
+  "cols": 20,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6dc356",
+   "y": "0x6dc21e"
+  },
+  "axis_pts": {
+   "x": 20,
+   "y": 20
+  },
+  "min": "0",
+  "max": "65.535",
+  "tuned": 0,
+  "size": 800,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map intake spread setpoint (normal operation, cold, load, path 1)",
+  "desc": "GKF_ESPR_NORM_KALT_PF1",
+  "delta": "0x410c4",
+  "user_addr": "0x6d9b6a",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9d6a",
+   "y": "0x6d9d02"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map intake spread setpoint (normal operation, cold, load, path 2)",
+  "desc": "GKF_ESPR_NORM_KALT_PF2",
+  "delta": "0x410c4",
+  "user_addr": "0x6d99ea",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9d4a",
+   "y": "0x6d9cea"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map intake spread setpoint (normal operation, warm, load, path 1)",
+  "desc": "GKF_ESPR_NORM_WARM_PF1",
+  "delta": "0x410c4",
+  "user_addr": "0x6d986a",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9d6a",
+   "y": "0x6d9d02"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map intake spread setpoint (normal operation, warm, load, path 2)",
+  "desc": "GKF_ESPR_NORM_WARM_PF2",
+  "delta": "0x410c4",
+  "user_addr": "0x6d96ea",
+  "rows": 12,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9d4a",
+   "y": "0x6d9cea"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 12
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 384,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map exhaust spread setpoint (during scavenging, path 1)",
+  "desc": "KF_ASPR_NORM_UESP_PF1",
+  "delta": "0x410b4",
+  "user_addr": "0x6d887e",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d892e",
+   "y": "0x6d890e"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda rich running limit for component protection filling intervention",
+  "desc": "KF_BSLGF",
+  "delta": "0x4123c",
+  "user_addr": "0x6d2446",
+  "rows": 4,
+  "cols": 4,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d2586",
+   "y": "0x6d2530"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 32,
+  "cats": [
+   "9"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Delta lambda for feedforward control of component protection exhaust temperature branch",
+  "desc": "KF_DLAMBSVST_TABG",
+  "delta": "0x4123c",
+  "user_addr": "0x6d262c",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 486,
+  "axes": {
+   "x": "0x6d2818",
+   "y": "0x6d27a8"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "-8",
+  "max": "0",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map boost pressure offset on target boost pressure (in sport mode)",
+  "desc": "KF_DPLDSOLL_SPORT",
+  "delta": "0x410c4",
+  "user_addr": "0x6dc5d6",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 2576,
+  "axes": {
+   "x": "0x6dc662",
+   "y": "0x6dc636"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "8191.875",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "2"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map maximum intake valve lift",
+  "desc": "KF_EHUB_MX",
+  "delta": "0x410c4",
+  "user_addr": "0x6da6ac",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6da750",
+   "y": "0x6da718"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "65.535",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map intake spread setpoint (during scavenging, path 1)",
+  "desc": "KF_ESPR_NORM_UESP_PF1",
+  "delta": "0x410b4",
+  "user_addr": "0x6d9378",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d9428",
+   "y": "0x6d9408"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "204",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Temperature correction factor for best ignition angle path 1",
+  "desc": "KF_FDZWT_BEST_PF1",
+  "delta": "0x4131a",
+  "user_addr": "0x6ec6e8",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 120,
+  "axes": {
+   "x": "0x6ec754",
+   "y": "0x6ec73c"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "-2",
+  "max": "1.99993896484375",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "11"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Temperature correction factor for best ignition angle path 2",
+  "desc": "KF_FDZWT_BEST_PF2",
+  "delta": "0x4131a",
+  "user_addr": "0x6ec6a0",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 192,
+  "axes": {
+   "x": "0x6ec748",
+   "y": "0x6ec730"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "-2",
+  "max": "1.99993896484375",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "11"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Temperature correction factor for ignition angle knock limit path 1",
+  "desc": "KF_FDZWT_PF1",
+  "delta": "0x4130e",
+  "user_addr": "0x6ec79c",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6ec808",
+   "y": "0x6ec7f0"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "-2",
+  "max": "1.9998779296875",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "12"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Temperature correction factor for ignition angle knock limit path 2",
+  "desc": "KF_FDZWT_PF2",
+  "delta": "0x4131a",
+  "user_addr": "0x6ec760",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6ec808",
+   "y": "0x6ec7f0"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "-2",
+  "max": "1.9998779296875",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "12"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map filter constant for F_transvl (= crossfade factor Wdk_soll to KL_DKVL)",
+  "desc": "KF_FK_FTRANSVL",
+  "delta": "0x410c4",
+  "user_addr": "0x6d81f2",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 256,
+  "axes": {
+   "x": "0x6d87a6",
+   "y": "0x6d86b2"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "0.999984741210938",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "18"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map feedforward correction bank 1",
+  "desc": "KF_FRKKORRF_1",
+  "delta": "0x410f8",
+  "user_addr": "0x6ced66",
+  "rows": 16,
+  "cols": 16,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6cefaa",
+   "y": "0x6cef7e"
+  },
+  "axis_pts": {
+   "x": 16,
+   "y": 16
+  },
+  "min": "0",
+  "max": "1.99996948242188",
+  "tuned": 0,
+  "size": 512,
+  "cats": [
+   "8"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map maximum intake valve lift increase per 10ms",
+  "desc": "KF_HUB_GRDMX",
+  "delta": "0x410c4",
+  "user_addr": "0x6da664",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6da744",
+   "y": "0x6da72c"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "65.535",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "21"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda combustion limit rich",
+  "desc": "KF_LAMIN_H",
+  "delta": "0x410c2",
+  "user_addr": "0x6d77c4",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6d7818",
+   "y": "0x6d780c"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Lambda setpoint for single cylinder deactivation",
+  "desc": "KF_LA_EZA",
+  "delta": "0x410c2",
+  "user_addr": "0x6d756e",
+  "rows": 6,
+  "cols": 6,
+  "anchor_dist": 598,
+  "axes": {
+   "x": "0x6d777e",
+   "y": "0x6d7702"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 72,
+  "cats": [
+   "6"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Base lambda in homogeneous mode during super-knock",
+  "desc": "KF_LA_SK",
+  "delta": "0x41724",
+  "user_addr": "0x6f9f96",
+  "rows": 17,
+  "cols": 18,
+  "anchor_dist": 612,
+  "axes": {
+   "x": "0x6fa6f0",
+   "y": "0x6fa6ce"
+  },
+  "axis_pts": {
+   "x": 18,
+   "y": 17
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 612,
+  "cats": [
+   "10"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map rail pressure homogeneous -- with active VVT",
+  "desc": "KF_PRAIL_H",
+  "delta": "0x411aa",
+  "user_addr": "0x6dd7d6",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6dd916",
+   "y": "0x6dd8be"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map rail pressure for protection against warm high-pressure pump",
+  "desc": "KF_PRAIL_HDPWARM",
+  "delta": "0x411ca",
+  "user_addr": "0x6dd776",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 128,
+  "axes": {
+   "x": "0x6dd926",
+   "y": "0x6dd8ce"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Map rail pressure homogeneous -- with inactive VVT (throttled)",
+  "desc": "KF_PRAIL_HGD",
+  "delta": "0x411ca",
+  "user_addr": "0x6dd6f6",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6dd916",
+   "y": "0x6dd8be"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map rail pressure homogeneous cold -- with inactive VVT (throttled)",
+  "desc": "KF_PRAIL_HGD_K",
+  "delta": "0x411da",
+  "user_addr": "0x6dd686",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6dd916",
+   "y": "0x6dd8be"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Map rail pressure homogeneous cold -- with active VVT",
+  "desc": "KF_PRAIL_H_K",
+  "delta": "0x411ea",
+  "user_addr": "0x6dd616",
+  "rows": 8,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6dd916",
+   "y": "0x6dd8be"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "min": "0",
+  "max": "39.9993896484375",
+  "tuned": 0,
+  "size": 128,
+  "cats": [
+   "10"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Target temperature for exhaust gas temperature turbocharger",
+  "desc": "KF_TA_ATLSOLL",
+  "delta": "0x4123c",
+  "user_addr": "0x6d2730",
+  "rows": 4,
+  "cols": 4,
+  "anchor_dist": 746,
+  "axes": {
+   "x": "0x6d2800",
+   "y": "0x6d2790"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 32,
+  "cats": [
+   "7"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Target temperature for exhaust gas temperature in catalyst",
+  "desc": "KF_TA_IKSOLL",
+  "delta": "0x4123c",
+  "user_addr": "0x6d2710",
+  "rows": 4,
+  "cols": 4,
+  "anchor_dist": 714,
+  "axes": {
+   "x": "0x6d27f8",
+   "y": "0x6d2788"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 32,
+  "cats": [
+   "7"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Target temperature for exhaust gas temperature mixing section",
+  "desc": "KF_TA_VKSOLL",
+  "delta": "0x4123c",
+  "user_addr": "0x6d26f0",
+  "rows": 4,
+  "cols": 4,
+  "anchor_dist": 682,
+  "axes": {
+   "x": "0x6d27f0",
+   "y": "0x6d2780"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 32,
+  "cats": [
+   "7"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Maximum value for throttle setpoint (only for S_WDKSVL_VAR=1)",
+  "desc": "KL_DKVL",
+  "delta": "0x410c4",
+  "user_addr": "0x6d8242",
+  "rows": 1,
+  "cols": 8,
+  "anchor_dist": 336,
+  "axes": {
+   "x": "0x6d877a"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "min": "0",
+  "max": "100",
+  "tuned": 0,
+  "size": 16,
+  "cats": [
+   "18"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 1",
+  "desc": "KL_LAND_MDKMAX_VAR1",
+  "delta": "0x41300",
+  "user_addr": "0x6e66ac",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2144,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 2",
+  "desc": "KL_LAND_MDKMAX_VAR2",
+  "delta": "0x41300",
+  "user_addr": "0x6e6688",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2180,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 3",
+  "desc": "KL_LAND_MDKMAX_VAR3",
+  "delta": "0x41300",
+  "user_addr": "0x6e6664",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2216,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 4",
+  "desc": "KL_LAND_MDKMAX_VAR4",
+  "delta": "0x41300",
+  "user_addr": "0x6e6640",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2252,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 5",
+  "desc": "KL_LAND_MDKMAX_VAR5",
+  "delta": "0x41300",
+  "user_addr": "0x6e661c",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2288,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 6",
+  "desc": "KL_LAND_MDKMAX_VAR6",
+  "delta": "0x41300",
+  "user_addr": "0x6e65f8",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2324,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Torque limitation for country variant 7",
+  "desc": "KL_LAND_MDKMAX_VAR7",
+  "delta": "0x41300",
+  "user_addr": "0x6e65d4",
+  "rows": 1,
+  "cols": 18,
+  "anchor_dist": 2360,
+  "axes": {
+   "x": "0x6e6870"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "min": "-3276.8",
+  "max": "3276.7",
+  "tuned": 0,
+  "size": 36,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Curve lambda setpoint for overrun burble",
+  "desc": "KL_LA_SBL",
+  "delta": "0x41724",
+  "user_addr": "0x6f9f8a",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 624,
+  "axes": {
+   "x": "0x6fa71c"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "0",
+  "max": "15.999755859375",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "9"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Speed-dependent full load curve of the combustion engine (Nkw_opt)",
+  "desc": "KL_MD_K_MAX_VL",
+  "delta": "0x416be",
+  "user_addr": "0x6f8c4e",
+  "rows": 1,
+  "cols": 12,
+  "anchor_dist": 4458,
+  "axes": {
+   "x": "0x6f8d46"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "min": "-32768",
+  "max": "32767",
+  "tuned": 0,
+  "size": 24,
+  "cats": [
+   "19"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Weighting factor for accumulated coolant difference",
+  "desc": "KL_NEL_I",
+  "delta": "0x410f8",
+  "user_addr": "0x6c634c",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 28614,
+  "axes": {
+   "x": "0x6c6344"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "199.996948242188",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "3"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Maximum target pressure ratio across throttle; speed-dependent with intercooler behind throttle",
+  "desc": "KL_PSPVDK_SOLMAXGD",
+  "delta": "0x410c2",
+  "user_addr": "0x6d7a56",
+  "rows": 1,
+  "cols": 6,
+  "anchor_dist": 658,
+  "axes": {
+   "x": "0x6d7a62"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "min": "0",
+  "max": "3.99993896484375",
+  "tuned": 0,
+  "size": 12,
+  "cats": [
+   "2"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Minimum filling for filling limitation from injection monitoring",
+  "desc": "KL_RFMIN_KRSTSYS",
+  "delta": "0x41472",
+  "user_addr": "0x6f0b3c",
+  "rows": 1,
+  "cols": 8,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6f0b4c"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 16,
+  "cats": [
+   "14"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Maximum nonlinear Drf for calculation of Ps_soll_sm_nl",
+  "desc": "KL_RFTNLMX",
+  "delta": "0x410c4",
+  "user_addr": "0x6d7f08",
+  "rows": 1,
+  "cols": 10,
+  "anchor_dist": 490,
+  "axes": {
+   "x": "0x6d7fa2"
+  },
+  "axis_pts": {
+   "x": 10
+  },
+  "min": "0",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 20,
+  "cats": [
+   "2"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "Curve Rfv_hub setpoint at F_rfv_dyn=0",
+  "desc": "KL_RFVHUBDYNKOR",
+  "delta": "0x410c4",
+  "user_addr": "0x6d8012",
+  "rows": 1,
+  "cols": 20,
+  "anchor_dist": 224,
+  "axes": {
+   "x": "0x6d806a"
+  },
+  "axis_pts": {
+   "x": 20
+  },
+  "min": "0",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 40,
+  "cats": [
+   "14"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "KL_TD_SOUND_MX",
+  "desc": "KL_TD_SOUND_MX",
+  "delta": "0x412f0",
+  "user_addr": "0x6e381a",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6e3832"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "655.35",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "6"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Sound duration freely configurable",
+  "desc": "KL_TD_SOUND_MX_FREI",
+  "delta": "0x412f8",
+  "user_addr": "0x6e381a",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6e3832"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "655.35",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "6"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "KL_TD_SOUND_MX_SPORT",
+  "desc": "KL_TD_SOUND_MX_SPORT",
+  "delta": "0x41300",
+  "user_addr": "0x6e381a",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 0,
+  "axes": {
+   "x": "0x6e3832"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "655.35",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "6"
+  ],
+  "status": "VERIFIED"
+ },
+ {
+  "title": "Coolant target temperature in normal operating mode depending on ambient temperature",
+  "desc": "KL_TKW_NO",
+  "delta": "0x410f8",
+  "user_addr": "0x6c6b1e",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 26612,
+  "axes": {
+   "x": "0x6c6b16"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "-327.68",
+  "max": "327.67",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "3"
+  ],
+  "status": "ANCHORED"
+ },
+ {
+  "title": "RPM limiter at high oil temperature",
+  "desc": "NMAXTO",
+  "delta": "0x41966",
+  "user_addr": "0x72e5c2",
+  "rows": 1,
+  "cols": 4,
+  "anchor_dist": 163400,
+  "axes": {
+   "x": "0x72e5ba"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "min": "0",
+  "max": "16383.75",
+  "tuned": 0,
+  "size": 8,
+  "cats": [
+   "5"
+  ],
+  "status": "ANCHORED"
+ }
+]

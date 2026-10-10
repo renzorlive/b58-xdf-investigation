@@ -1,0 +1,19 @@
+# Proprietary ECU firmware - never commit
+*.bin
+*.Bin
+10SW002828_iRom_ori
+10SW002828_iRom_stage2
+*.hex
+*.s19
+*.ori
+*.mod
+
+# Large third-party reference material (re-downloadable from their own repos)
+ref/
+mgflasher-map-packs/
+*.zip
+
+# Local scratch
+__pycache__/
+*.pyc
+out/_hash_baseline.json

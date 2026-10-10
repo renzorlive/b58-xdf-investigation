@@ -1,0 +1,12 @@
+{
+ "VERIFIED": 1458,
+ "PROBABLE": 0,
+ "PARTIAL": 0,
+ "combined": 1507,
+ "total_changed": 3821,
+ "combined_pct": 39.44,
+ "unexplained": 2314,
+ "md5_ori": "40c3a007f425858e11cd9b0961dd321b",
+ "md5_mod": "251f649b87413ec83d01ef7a53bed2af",
+ "tables": 71
+}

@@ -1,0 +1,68 @@
+[
+ {
+  "desc": "KL_MD_K_MAX_VL_HS",
+  "title": "Speed-dependent full load curve (half step)",
+  "addr": 7310496,
+  "axis": 7310744,
+  "data_identical": true,
+  "axis_identical": true,
+  "ori": 500,
+  "mod": 650,
+  "changed": 12
+ },
+ {
+  "desc": "KL_MD_K_MAX_VL",
+  "title": "Speed-dependent full load curve",
+  "addr": 7310520,
+  "axis": 7310768,
+  "data_identical": true,
+  "axis_identical": true,
+  "ori": 500,
+  "mod": 650,
+  "changed": 12
+ },
+ {
+  "desc": "KL_MD_K_MAX_RST_HS",
+  "title": "Speed-dependent launch control curve (half step)",
+  "addr": 7310544,
+  "axis": 7310792,
+  "data_identical": true,
+  "axis_identical": true,
+  "ori": 300,
+  "mod": 300,
+  "changed": 0
+ },
+ {
+  "desc": "KL_MD_K_MAX_RST",
+  "title": "Speed-dependent launch control curve",
+  "addr": 7310568,
+  "axis": 7310816,
+  "data_identical": true,
+  "axis_identical": true,
+  "ori": 300,
+  "mod": 300,
+  "changed": 0
+ },
+ {
+  "desc": "KL_MD_K_MAX_BST_HS",
+  "title": "Speed-dependent boost curve, manual transmission",
+  "addr": 7310592,
+  "axis": 7310840,
+  "data_identical": true,
+  "axis_identical": true,
+  "ori": 300,
+  "mod": 650,
+  "changed": 12
+ },
+ {
+  "desc": "KL_MD_K_MAX_BST",
+  "title": "Speed-dependent boost curve",
+  "addr": 7310616,
+  "axis": 7310864,
+  "data_identical": true,
+  "axis_identical": true,
+  "ori": 485,
+  "mod": 650,
+  "changed": 12
+ }
+]

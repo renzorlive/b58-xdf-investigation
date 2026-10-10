@@ -1,0 +1,1870 @@
+[
+ {
+  "title": "Base lambda in homogeneous mode bank 1",
+  "desc": "KF_LABAS_1",
+  "delta": "0x41724",
+  "user_addr": "0x6fa45e",
+  "rows": 17,
+  "cols": 18,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6fa6f0",
+   "y": "0x6fa6ce"
+  },
+  "axis_pts": {
+   "x": 18,
+   "y": 17
+  },
+  "eq_defined": true,
+  "tuned": 332,
+  "size": 612,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Base lambda in homogeneous mode bank 2",
+  "desc": "KF_LABAS_2",
+  "delta": "0x41724",
+  "user_addr": "0x6fa1fa",
+  "rows": 17,
+  "cols": 18,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6fa6f0",
+   "y": "0x6fa6ce"
+  },
+  "axis_pts": {
+   "x": 18,
+   "y": 17
+  },
+  "eq_defined": true,
+  "tuned": 301,
+  "size": 612,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Compressor map with required compressor / turbine power",
+  "desc": "BMWtchctr_pwr_Pctl_M",
+  "delta": "0x41446",
+  "user_addr": "0x6f6f4e",
+  "rows": 16,
+  "cols": 20,
+  "esize": 16,
+  "mn": "0",
+  "mx": "127.998046875",
+  "axes": {
+   "x": "0x6f7406",
+   "y": "0x6f73aa"
+  },
+  "axis_pts": {
+   "x": 20,
+   "y": 16
+  },
+  "eq_defined": true,
+  "tuned": 230,
+  "size": 640,
+  "cats": [
+   "22"
+  ]
+ },
+ {
+  "title": "Inner torque limitation factor from knock control (optimal ignition angle cannot be achieved)",
+  "desc": "KF_F_MDIMAX_KR",
+  "delta": "0x40e72",
+  "user_addr": "0x6f7f40",
+  "rows": 7,
+  "cols": 8,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1",
+  "axes": {
+   "x": "0x6f809a",
+   "y": "0x6f8014"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 7
+  },
+  "eq_defined": true,
+  "tuned": 112,
+  "size": 112,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "KF_MDK_MAX_GANG_NKW",
+  "desc": "KF_MDK_MAX_GANG_NKW",
+  "delta": "0x40938",
+  "user_addr": "0x6f7026",
+  "rows": 8,
+  "cols": 10,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "y": "0x6f70c6"
+  },
+  "axis_pts": {
+   "y": 8
+  },
+  "eq_defined": false,
+  "tuned": 98,
+  "size": 160,
+  "cats": [
+   "13"
+  ]
+ },
+ {
+  "title": "Pressure difference correction for P-component of power-based boost pressure controller",
+  "desc": "BMWtchctr_p_DifCrtnPp_M",
+  "delta": "0x412cc",
+  "user_addr": "0x6f7054",
+  "rows": 6,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-4096",
+  "mx": "4095.875",
+  "axes": {
+   "x": "0x6f71c4",
+   "y": "0x6f7268"
+  },
+  "axis_pts": {
+   "x": 12,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 97,
+  "size": 144,
+  "cats": [
+   "22"
+  ]
+ },
+ {
+  "title": "Base lambda in homogeneous mode during super-knock",
+  "desc": "KF_LA_SK",
+  "delta": "0x4042c",
+  "user_addr": "0x6f8c9e",
+  "rows": 17,
+  "cols": 18,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6f93f8",
+   "y": "0x6f93d6"
+  },
+  "axis_pts": {
+   "x": 18,
+   "y": 17
+  },
+  "eq_defined": true,
+  "tuned": 96,
+  "size": 612,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Map base Rk quantity throttled operation",
+  "desc": "KF_ST_RKBAS_GD",
+  "delta": "0x406cc",
+  "user_addr": "0x6f8c78",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "mn": "-1600",
+  "mx": "1599.951171875",
+  "axes": {
+   "x": "0x6f8dcc",
+   "y": "0x6f8d40"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "eq_defined": false,
+  "tuned": 96,
+  "size": 200,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lambda setpoint for multiple injection",
+  "desc": "BMWchas_lam_InjMpl_M",
+  "delta": "0x4146a",
+  "user_addr": "0x6eee90",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6efc0c",
+   "y": "0x6ef978"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "eq_defined": true,
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lambda setpoint for multiple injection at throttled operation mode",
+  "desc": "BMWchas_lam_InjMplThr_M",
+  "delta": "0x41456",
+  "user_addr": "0x6eef44",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6efc0c",
+   "y": "0x6ef978"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "eq_defined": true,
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lambda setpoint for single injection",
+  "desc": "BMWchas_lam_InjSng_M",
+  "delta": "0x414a2",
+  "user_addr": "0x6eecf8",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6efc0c",
+   "y": "0x6ef978"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "eq_defined": true,
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lambda setpoint for single injection at throttled operation mode",
+  "desc": "BMWchas_lam_InjSngThr_M",
+  "delta": "0x4148e",
+  "user_addr": "0x6eedac",
+  "rows": 10,
+  "cols": 10,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6efc0c",
+   "y": "0x6ef978"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 10
+  },
+  "eq_defined": true,
+  "tuned": 90,
+  "size": 200,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Inner torque limitation after pre-ignition events (super-knock)",
+  "desc": "KF_MDIMAX_SK",
+  "delta": "0x40060",
+  "user_addr": "0x6f7060",
+  "rows": 7,
+  "cols": 8,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f726c"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "eq_defined": false,
+  "tuned": 81,
+  "size": 112,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Map base Rk quantity VVT operation",
+  "desc": "KF_ST_RKBAS_VVT",
+  "delta": "0x403b6",
+  "user_addr": "0x6f87a0",
+  "rows": 12,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-1600",
+  "mx": "1599.951171875",
+  "axes": {
+   "x": "0x6f8904",
+   "y": "0x6f88c0"
+  },
+  "axis_pts": {
+   "x": 12,
+   "y": 12
+  },
+  "eq_defined": false,
+  "tuned": 80,
+  "size": 288,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lower mass flow ratio for HFM diagnostics Mshfm vs. Mszyl_diag",
+  "desc": "KF_FMS_HFMPL_MN",
+  "delta": "0x410f8",
+  "user_addr": "0x6cd35a",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1.99996948242188",
+  "axes": {
+   "x": "0x6cd3c6",
+   "y": "0x6cd3ae"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 72,
+  "size": 72,
+  "cats": [
+   "16"
+  ]
+ },
+ {
+  "title": "Upper mass flow ratio for HFM diagnostics Mshfm vs. Mszyl_diag",
+  "desc": "KF_FMS_HFMPL_MX",
+  "delta": "0x41104",
+  "user_addr": "0x6cd31e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1.99996948242188",
+  "axes": {
+   "x": "0x6cd3c6",
+   "y": "0x6cd3ae"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 72,
+  "size": 72,
+  "cats": [
+   "16"
+  ]
+ },
+ {
+  "title": "Max. inner torque limitation via intake air temperature",
+  "desc": "KF_MDIMAX_TANS",
+  "delta": "0x41734",
+  "user_addr": "0x6f86ec",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f8934",
+   "y": "0x6f88ca"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 60,
+  "size": 72,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Exhaust gas temperature during dynamic load changes for physical turbocharger feedforward control",
+  "desc": "BMWtchctr_t_ExGasMdl_M",
+  "delta": "0x40f50",
+  "user_addr": "0x6f708e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f7332",
+   "y": "0x6f72ca"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 58,
+  "size": 72,
+  "cats": [
+   "7"
+  ]
+ },
+ {
+  "title": "Exhaust gas temperature during dynamic load changes for physical turbocharger feedforward control",
+  "desc": "BMWtchctr_t_ExGasMdlScav_M",
+  "delta": "0x40f08",
+  "user_addr": "0x6f708e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f72f6",
+   "y": "0x6f728e"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 58,
+  "size": 72,
+  "cats": [
+   "7"
+  ]
+ },
+ {
+  "title": "Max. inner torque limitation via temperature before throttle",
+  "desc": "KF_MDIMAX_TVDK",
+  "delta": "0x4011e",
+  "user_addr": "0x6f708e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f7312",
+   "y": "0x6f72a8"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 58,
+  "size": 72,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Lower mass flow ratio for diagnostics of mass flow in intake manifold Msev_diag versus Msdk_diag",
+  "desc": "KF_FMS_DKPSRPL_MN",
+  "delta": "0x4118c",
+  "user_addr": "0x6fa66e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1.99996948242188",
+  "axes": {
+   "x": "0x6fa6f2",
+   "y": "0x6fa6ce"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 56,
+  "size": 72,
+  "cats": [
+   "16"
+  ]
+ },
+ {
+  "title": "Upper mass flow ratio for diagnostics of mass flow in intake manifold Msev_diag versus Msdk_diag",
+  "desc": "KF_FMS_DKPSRPL_MX",
+  "delta": "0x411c4",
+  "user_addr": "0x6fa65e",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1.99996948242188",
+  "axes": {
+   "x": "0x6fa71e",
+   "y": "0x6fa6fa"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 56,
+  "size": 72,
+  "cats": [
+   "16"
+  ]
+ },
+ {
+  "title": "Inner torque limitation due to component protection at rich running limit",
+  "desc": "KF_MDIMAX_FG",
+  "delta": "0x40016",
+  "user_addr": "0x6f7086",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f7232",
+   "y": "0x6f71ce"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 55,
+  "size": 72,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Rail pressure setpoint for multiple injection",
+  "desc": "BMWchas_p_RailInjMpl_M",
+  "delta": "0x41260",
+  "user_addr": "0x6eeed6",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "39.9993896484375",
+  "axes": {
+   "x": "0x6ef9be",
+   "y": "0x6ef5da"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 54,
+  "size": 72,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Map rail pressure homogeneous cold -- with active VVT",
+  "desc": "KF_PRAIL_H_K",
+  "delta": "0x417c0",
+  "user_addr": "0x6ddbec",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "mn": "0",
+  "mx": "39.9993896484375",
+  "axes": {
+   "x": "0x6ddeec",
+   "y": "0x6dde94"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "eq_defined": true,
+  "tuned": 53,
+  "size": 128,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Wastegate position - for feedforward control",
+  "desc": "BMWtchctr_pct_WgBasc_M",
+  "delta": "0x40eb6",
+  "user_addr": "0x6f7094",
+  "rows": 12,
+  "cols": 12,
+  "esize": 16,
+  "mn": "0",
+  "mx": "99.9984741210938",
+  "axes": {
+   "x": "0x6f71c4",
+   "y": "0x6f7270"
+  },
+  "axis_pts": {
+   "x": 12,
+   "y": 12
+  },
+  "eq_defined": true,
+  "tuned": 52,
+  "size": 288,
+  "cats": [
+   "22"
+  ]
+ },
+ {
+  "title": "Max. permissible launch RPM (normal mode)",
+  "desc": "KF_N_GASSTOSS_UND_ANFAHR",
+  "delta": "0x40058",
+  "user_addr": "0x6ddbfc",
+  "rows": 4,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6ddc34",
+   "y": "0x6ddc2c"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 4
+  },
+  "eq_defined": false,
+  "tuned": 39,
+  "size": 48,
+  "cats": [
+   "5"
+  ]
+ },
+ {
+  "title": "Maximum relative filling",
+  "desc": "KL_LAMX",
+  "delta": "0x410c4",
+  "user_addr": "0x6da1e6",
+  "rows": 1,
+  "cols": 18,
+  "esize": 16,
+  "mn": "0",
+  "mx": "327.67",
+  "axes": {
+   "x": "0x6da20a"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "eq_defined": true,
+  "tuned": 36,
+  "size": 36,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "Map start angle injection event 1 preventive super-knock",
+  "desc": "KF_PHA_H_B1_SK_PRE",
+  "delta": "0x410f8",
+  "user_addr": "0x6d0144",
+  "rows": 12,
+  "cols": 10,
+  "esize": 16,
+  "mn": "-768",
+  "mx": "767.9765625",
+  "axes": {
+   "x": "0x6d06bc",
+   "y": "0x6d0684"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 12
+  },
+  "eq_defined": true,
+  "tuned": 36,
+  "size": 240,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Map start angle injection event 1 warm",
+  "desc": "KF_PHA_H_B1_W",
+  "delta": "0x410f8",
+  "user_addr": "0x6cffd4",
+  "rows": 12,
+  "cols": 10,
+  "esize": 16,
+  "mn": "-768",
+  "mx": "767.9765625",
+  "axes": {
+   "x": "0x6d06bc",
+   "y": "0x6d0684"
+  },
+  "axis_pts": {
+   "x": 10,
+   "y": 12
+  },
+  "eq_defined": true,
+  "tuned": 36,
+  "size": 240,
+  "cats": [
+   "8"
+  ]
+ },
+ {
+  "title": "Torque adjustment for the performance display",
+  "desc": "KF_EDA_ANZ_SPORT_MD_EM1_IST",
+  "delta": "0x3f870",
+  "user_addr": "0x6c9cb4",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6c9d50",
+   "y": "0x6c9d80"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 32,
+  "size": 72,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "Torque adjustment for the performance display",
+  "desc": "KF_EDA_ANZ_SPORT_MDK_IST",
+  "delta": "0x3f810",
+  "user_addr": "0x6c9c9c",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6c9cfc",
+   "y": "0x6c9d2c"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": false,
+  "tuned": 30,
+  "size": 72,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "KL_MDIMX_VL_APPLZ",
+  "desc": "KL_MDIMX_VL_APPLZ",
+  "delta": "0x40160",
+  "user_addr": "0x6f70ac",
+  "rows": 1,
+  "cols": 18,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f7330"
+  },
+  "axis_pts": {
+   "x": 18
+  },
+  "eq_defined": false,
+  "tuned": 29,
+  "size": 36,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent boost curve of the combustion engine (Nkw_opt)",
+  "desc": "KL_MD_K_MAX_BST",
+  "delta": "0x41728",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6f8e10"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent boost curve of the combustion engine (Nkw_opt) for manual transmission",
+  "desc": "KL_MD_K_MAX_BST_HS",
+  "delta": "0x41740",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6f8e10"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent strategic gearbox input limit during boost for automatic transmission",
+  "desc": "KL_MD_K_MAX_BST_STRG_AT",
+  "delta": "0x41728",
+  "user_addr": "0x6f7fa6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f809a"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent strategic gearbox input limit during boost for manual transmission",
+  "desc": "KL_MD_K_MAX_BST_STRG_HS",
+  "delta": "0x41740",
+  "user_addr": "0x6f7fa6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f809a"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent strategic gearbox input limit during launch control for automatic transmission",
+  "desc": "KL_MD_K_MAX_RNSTART_STRG_AT",
+  "delta": "0x41758",
+  "user_addr": "0x6f7fa6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f809a"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent strategic gearbox input limit during launch control for manual transmission",
+  "desc": "KL_MD_K_MAX_RNSTART_STRG_HS",
+  "delta": "0x41770",
+  "user_addr": "0x6f7fa6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f809a"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent launch control curve of the combustion engine (Nkw_opt)",
+  "desc": "KL_MD_K_MAX_RST",
+  "delta": "0x41758",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6f8e10"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent launch control curve of the combustion engine (Nkw_opt) for manual transmission",
+  "desc": "KL_MD_K_MAX_RST_HS",
+  "delta": "0x41770",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6f8e10"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent full load curve of the combustion engine (Nkw_opt)",
+  "desc": "KL_MD_K_MAX_VL",
+  "delta": "0x41788",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6f8e10"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent strategic gearbox input limit during eco for automatic transmission",
+  "desc": "KL_MD_K_MAX_VL_ECO_STRG_AT",
+  "delta": "0x41788",
+  "user_addr": "0x6f7fa6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f809a"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent strategic gearbox input limit during eco for manual transmission",
+  "desc": "KL_MD_K_MAX_VL_ECO_STRG_HS",
+  "delta": "0x417a0",
+  "user_addr": "0x6f7fa6",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6f809a"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Speed-dependent full load curve of the combustion engine (Nkw_opt) for manual transmission",
+  "desc": "KL_MD_K_MAX_VL_HS",
+  "delta": "0x417a0",
+  "user_addr": "0x6f8d18",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-32768",
+  "mx": "32767",
+  "axes": {
+   "x": "0x6f8e10"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": false,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Curve maximum permissible filling over engine speed",
+  "desc": "KL_RF_MAX",
+  "delta": "0x414d8",
+  "user_addr": "0x6da1f2",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-327.68",
+  "mx": "327.67",
+  "axes": {
+   "x": "0x6da5e2"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": true,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "Curve maximum permissible filling over engine speed during scavenging",
+  "desc": "KL_RF_MAX_UESP",
+  "delta": "0x414f0",
+  "user_addr": "0x6da1f2",
+  "rows": 1,
+  "cols": 12,
+  "esize": 16,
+  "mn": "-327.68",
+  "mx": "327.67",
+  "axes": {
+   "x": "0x6da5e2"
+  },
+  "axis_pts": {
+   "x": 12
+  },
+  "eq_defined": true,
+  "tuned": 24,
+  "size": 24,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "Torque reserve during post-start",
+  "desc": "KF_MD_RES_NST_KEY",
+  "delta": "0x40cc2",
+  "user_addr": "0x6e68ce",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6e690e",
+   "y": "0x6e691e"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "eq_defined": false,
+  "tuned": 18,
+  "size": 32,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "KF_PHA_H_E1",
+  "desc": "KF_PHA_H_E1",
+  "delta": "0x3fc28",
+  "user_addr": "0x6d00a4",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "mn": "-768",
+  "mx": "767.9765625",
+  "axes": {
+   "x": "0x6d0688",
+   "y": "0x6d05b4"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "eq_defined": true,
+  "tuned": 18,
+  "size": 128,
+  "cats": [
+   "8"
+  ]
+ },
+ {
+  "title": "Torque reserve above which the exhaust flap should be closed for acoustic reasons",
+  "desc": "BMWchas_tq_ResExhFlpClsd_T",
+  "delta": "0x4124e",
+  "user_addr": "0x6eef0c",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6ef8bc"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "eq_defined": false,
+  "tuned": 16,
+  "size": 16,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "KL_FPLDPUMP",
+  "desc": "BMWtchsp_rat_p_CmprPmp_T",
+  "delta": "0x4124c",
+  "user_addr": "0x6de0a6",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "mn": "0",
+  "mx": "3.99993896484375",
+  "axes": {
+   "x": "0x6de18a"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "eq_defined": true,
+  "tuned": 14,
+  "size": 16,
+  "cats": [
+   "2"
+  ]
+ },
+ {
+  "title": "Lambda rich running limit for component protection filling intervention",
+  "desc": "KF_BSLGF",
+  "delta": "0x3eea2",
+  "user_addr": "0x6d00ac",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6d01ec",
+   "y": "0x6d0196"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "eq_defined": true,
+  "tuned": 13,
+  "size": 32,
+  "cats": [
+   "9"
+  ]
+ },
+ {
+  "title": "Curve upper limit Rf for stoichiometric lambda adaptation",
+  "desc": "BMWinjafs_fac_RatAirMax_T",
+  "delta": "0x3f772",
+  "user_addr": "0x6cd396",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-327.68",
+  "mx": "327.67",
+  "axes": {
+   "x": "0x6cd3ae"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "Correction factor for D-component of power-based boost pressure controller",
+  "desc": "BMWtchctr_fac_Dp_T",
+  "delta": "0x415aa",
+  "user_addr": "0x6f6fc2",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6f7452"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "22"
+  ]
+ },
+ {
+  "title": "Correction factor for D-component of power-based boost pressure controller",
+  "desc": "BMWtchctr_fac_DpDyn_T",
+  "delta": "0x4159e",
+  "user_addr": "0x6f6fc2",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6f7452"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "22"
+  ]
+ },
+ {
+  "title": "Feedforward factor up to which the controller can raise compressor power above feedforward using P and D components",
+  "desc": "BMWtchctr_fac_pwr_CompLimPctl_T",
+  "delta": "0x40c8c",
+  "user_addr": "0x6f70a6",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1.99996948242188",
+  "axes": {
+   "x": "0x6f70e2"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "2"
+  ]
+ },
+ {
+  "title": "Curve lambda setpoint for overrun burble",
+  "desc": "KL_LA_SBL",
+  "delta": "0x404b4",
+  "user_addr": "0x6f8d1a",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6f94ac"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "9"
+  ]
+ },
+ {
+  "title": "Curve for the up-gradient of the rate limiter of Mdi_max",
+  "desc": "KL_MDI_MAX_GRD_UP",
+  "delta": "0x401f6",
+  "user_addr": "0x6f70a8",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "6553.5",
+  "axes": {
+   "x": "0x6f7334"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Factor for limiting Mdi_max depending on engine temperature",
+  "desc": "KL_MDIMX_F_TMOT",
+  "delta": "0x41758",
+  "user_addr": "0x6f881a",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1",
+  "axes": {
+   "x": "0x6f88c2"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 12,
+  "size": 12,
+  "cats": [
+   "19"
+  ]
+ },
+ {
+  "title": "Electric fuel pump speed control via PWM",
+  "desc": "BMWlpa_rat_EfpPwm_T",
+  "delta": "0x41248",
+  "user_addr": "0x6d400a",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "-327.68",
+  "mx": "327.67",
+  "axes": {
+   "x": "0x6d411a"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 12,
+  "cats": [
+   "15"
+  ]
+ },
+ {
+  "title": "Curve maximum pressure before high-pressure pump depending on flow rate",
+  "desc": "BMWlpsc_p_HppMax_T",
+  "delta": "0x4148a",
+  "user_addr": "0x6f1ba0",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "65.535",
+  "axes": {
+   "x": "0x6f1c5c"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Reduction factor for overboost torque via intake air temperature",
+  "desc": "BMWtchob_fac_tq_Delt_T",
+  "delta": "0x41510",
+  "user_addr": "0x6de0a0",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "0.999984741210938",
+  "axes": {
+   "x": "0x6de148"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "2"
+  ]
+ },
+ {
+  "title": "Setpoint for wastegate position during blow-off valve active",
+  "desc": "BMWtchout_pct_WgBlwOff_T",
+  "delta": "0x412aa",
+  "user_addr": "0x6de0ac",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "99.9984741210938",
+  "axes": {
+   "x": "0x6de0ec"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "22"
+  ]
+ },
+ {
+  "title": "Filter constant for target pressure ratio",
+  "desc": "BMWtchsp_fac_FilPRatCmpr_T",
+  "delta": "0x411da",
+  "user_addr": "0x6de0a4",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "0.999984741210938",
+  "axes": {
+   "x": "0x6de148"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "2"
+  ]
+ },
+ {
+  "title": "Filter constant for corrected target mass flow",
+  "desc": "BMWtchsp_fac_mf_FilCmprNorm_T",
+  "delta": "0x40c98",
+  "user_addr": "0x6ddc1c",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "0.999984741210938",
+  "axes": {
+   "x": "0x6ddc44"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "2"
+  ]
+ },
+ {
+  "title": "Curve factor for filling intervention at component protection rich running limit",
+  "desc": "KL_FRFMXBS",
+  "delta": "0x3eee6",
+  "user_addr": "0x6d00bc",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "1.99996948242188",
+  "axes": {
+   "x": "0x6d01c2"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "KL_TD_SOUND_MX",
+  "desc": "KL_TD_SOUND_MX",
+  "delta": "0x40984",
+  "user_addr": "0x6e2eae",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "655.35",
+  "axes": {
+   "x": "0x6e2ec6"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "Sound duration freely configurable",
+  "desc": "KL_TD_SOUND_MX_FREI",
+  "delta": "0x4098c",
+  "user_addr": "0x6e2eae",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "655.35",
+  "axes": {
+   "x": "0x6e2ec6"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "KL_TD_SOUND_MX_SPORT",
+  "desc": "KL_TD_SOUND_MX_SPORT",
+  "delta": "0x40994",
+  "user_addr": "0x6e2eae",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "655.35",
+  "axes": {
+   "x": "0x6e2ec6"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 8,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "GPF heating, rail pressure setpoint for multiple injection",
+  "desc": "BMWgpfheat_p_RailInjMpl_M",
+  "delta": "0x4089a",
+  "user_addr": "0x6d400a",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "39.9993896484375",
+  "axes": {
+   "x": "0x6d4616",
+   "y": "0x6d4526"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 72,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "GPF heating, rail pressure setpoint for single injection",
+  "desc": "BMWgpfheat_p_RailInjSng_M",
+  "delta": "0x408a6",
+  "user_addr": "0x6d3fce",
+  "rows": 6,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "39.9993896484375",
+  "axes": {
+   "x": "0x6d4616",
+   "y": "0x6d4526"
+  },
+  "axis_pts": {
+   "x": 6,
+   "y": 6
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 72,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "Electric fuel pump speed setpoint safe mode",
+  "desc": "BMWlpa_n_EfpModSafe_M",
+  "delta": "0x41234",
+  "user_addr": "0x6d4002",
+  "rows": 4,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "65535",
+  "axes": {
+   "x": "0x6d40f2",
+   "y": "0x6d40ea"
+  },
+  "axis_pts": {
+   "x": 4,
+   "y": 4
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 32,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Map intake valve lift setpoint during engine start",
+  "desc": "KF_HUBESTM",
+  "delta": "0x4042c",
+  "user_addr": "0x6d9dee",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "mn": "0",
+  "mx": "65.535",
+  "axes": {
+   "x": "0x6db6e6",
+   "y": "0x6db5ae"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 128,
+  "cats": [
+   "21"
+  ]
+ },
+ {
+  "title": "Map rail pressure homogeneous cold -- with inactive VVT (throttled)",
+  "desc": "KF_PRAIL_HGD_K",
+  "delta": "0x417d8",
+  "user_addr": "0x6ddc84",
+  "rows": 8,
+  "cols": 8,
+  "esize": 16,
+  "mn": "0",
+  "mx": "39.9993896484375",
+  "axes": {
+   "x": "0x6ddf14",
+   "y": "0x6ddebc"
+  },
+  "axis_pts": {
+   "x": 8,
+   "y": 8
+  },
+  "eq_defined": true,
+  "tuned": 8,
+  "size": 128,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lambda feedforward value after cylinder deactivation in component protection",
+  "desc": "BMWext_lam_CptPronDfco_T",
+  "delta": "0x41784",
+  "user_addr": "0x6f1bcc",
+  "rows": 1,
+  "cols": 6,
+  "esize": 16,
+  "mn": "0",
+  "mx": "15.999755859375",
+  "axes": {
+   "x": "0x6f1be4"
+  },
+  "axis_pts": {
+   "x": 6
+  },
+  "eq_defined": true,
+  "tuned": 4,
+  "size": 12,
+  "cats": [
+   "10"
+  ]
+ },
+ {
+  "title": "Lower safeguard for relative filling limit by the GPF. Even with a fully loaded GPF, the filling limit cannot drop below this value.",
+  "desc": "BMWgpfdiag_rf_LimPclFilMin_T",
+  "delta": "0x3f9bc",
+  "user_addr": "0x6d3044",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "-327.68",
+  "mx": "327.67",
+  "axes": {
+   "x": "0x6d309c"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 2,
+  "size": 8,
+  "cats": [
+   "14"
+  ]
+ },
+ {
+  "title": "Torque reserve above which the exhaust flap should be closed for acoustic reasons",
+  "desc": "BMWgpfheat_tq_ResExhFlpClsd_T",
+  "delta": "0x3f3d4",
+  "user_addr": "0x6d3044",
+  "rows": 1,
+  "cols": 8,
+  "esize": 16,
+  "mn": "-3276.8",
+  "mx": "3276.7",
+  "axes": {
+   "x": "0x6d3134"
+  },
+  "axis_pts": {
+   "x": 8
+  },
+  "eq_defined": false,
+  "tuned": 2,
+  "size": 16,
+  "cats": [
+   "6"
+  ]
+ },
+ {
+  "title": "Weighting factor for accumulated coolant difference",
+  "desc": "KL_NEL_I",
+  "delta": "0x40278",
+  "user_addr": "0x6c54cc",
+  "rows": 1,
+  "cols": 4,
+  "esize": 16,
+  "mn": "0",
+  "mx": "199.996948242188",
+  "axes": {
+   "x": "0x6c54c4"
+  },
+  "axis_pts": {
+   "x": 4
+  },
+  "eq_defined": true,
+  "tuned": 1,
+  "size": 8,
+  "cats": [
+   "3"
+  ]
+ }
+]

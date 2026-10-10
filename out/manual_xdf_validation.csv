@@ -1,0 +1,79 @@
+desc,addr,dims,bits,points,eq,eq_safe,axes_addr,axes_none,vmin,vmax,stock_vs_stage2
+KL_NEL_TMOT,0x6C4CDC,1x12,8,12,X*0.390625,True,0,2,0,255,0
+KF_VSEWP_LLK_TANS,0x6C503A,6x6,16,36,X*0.5,True,2,0,0,3000,0
+KL_MDRED_NKW,0x6C54CE,1x6,8,6,X*0.0078125,True,1,1,129,129,0
+K_TKW_NO,0x6C553E,1x4,16,4,X/100,True,1,1,10300,10300,0
+KL_TKW_HI,0x6C5550,1x4,16,4,X/100,True,1,1,9500,9500,0
+KF_EDA_ANZ_SPORT_MD_EM1_IST,0x6C9CA8,6x6,16,36,X*0.1,True,1,1,0,64536,18
+KF_EDA_ANZ_SPORT_MDK_IST,0x6C9CF0,6x6,16,36,X*0.1,True,2,0,0,4500,6
+KF_FMS_HFMPL_MX,0x6CD312,6x6,16,36,X*0.00003051758,True,2,0,42598,65535,30
+KF_FMS_HFMPL_MN,0x6CD35A,6x6,16,36,X*0.00003051758,True,2,0,8192,19661,36
+BMWinjafs_fac_RatAirMax_T,0x6CED1C,1x6,16,6,X*0.010,True,1,1,17600,17600,0
+KF_BSLGF,0x6D2446,4x4,16,16,X*0.0002441406*14.7,True,2,0,3072,3072,0
+KF_TA_VKSOLL,0x6D26F0,4x4,16,16,X*0.1,True,2,0,9000,9000,0
+KF_TA_IKSOLL,0x6D2710,4x4,16,16,X*0.1,True,2,0,9500,9500,0
+KF_TA_ATLSOLL,0x6D2730,4x4,16,16,X*0.1,True,2,0,9800,9800,0
+BMWlpa_rat_EfpPwm_T,0x6D3FFE,1x6,16,6,X*0.010,True,1,1,200,9000,0
+BMWlpsd_p_RailDifMax_T,0x6D468A,1x4,16,4,X*0.000610351563,True,1,1,5734,5734,0
+BMWgpfheat_tq_ResExhFlpClsd_T,0x6D4EAC,1x8,16,8,X*0.1,True,1,1,0,10000,0
+KF_LAMIN_H,0x6D77C4,6x6,16,36,X*0.0002441406*14.7,True,2,0,2867,2867,0
+KF_FTRANSVL,0x6D80F2,8x8,16,64,X*0.00001525879,True,1,1,0,65529,0
+GKF_ASPR_NORM_WARM_PF2,0x6D8BF0,12x16,16,192,X*0.1,True,2,0,1000,1180,0
+GKF_ASPR_NORM_WARM_PF1,0x6D8D70,12x16,16,192,X*0.1,True,2,0,757,1143,0
+GKF_ASPR_NORM_KALT_PF2,0x6D8EF0,12x16,16,192,X*0.1,True,2,0,1041,1180,0
+GKF_ASPR_NORM_KALT_PF1,0x6D9070,12x16,16,192,X*0.1,True,2,0,872,1200,0
+GKF_ESPR_NORM_WARM_PF2,0x6D96EA,12x16,16,192,X*0.1,True,2,0,750,1175,0
+GKF_ESPR_NORM_WARM_PF1,0x6D986A,12x16,16,192,X*0.1,True,2,0,551,1109,0
+GKF_ESPR_NORM_KALT_PF2,0x6D99EA,12x16,16,192,X*0.1,True,2,0,780,1175,0
+GKF_ESPR_NORM_KALT_PF1,0x6D9B6A,12x16,16,192,X*0.1,True,2,0,609,1222,0
+KL_RF_MAX_UESP,0x6D9DC6,1x12,16,12,X/100,True,1,1,16000,18500,12
+KL_RF_MAX,0x6D9DDE,1x12,16,12,X/100,True,1,1,16000,18500,12
+"For naturally aspirated operation, should not exceed 100% KL_LAMX",0x6DA1E6,1x18,16,18,X*0.01,True,1,1,9200,9200,18
+KF_HUB_GRDMX,0x6DA664,6x6,16,36,X*0.001,True,2,0,10000,10000,0
+KF_EHUB_MX,0x6DA6AC,6x6,16,36,X*0.001,True,2,0,9970,9970,0
+KF_HUBESTM,0x6DAA86,8x8,16,64,X*0.001,True,1,1,1900,3300,0
+GKF_EHUB_NORM_WARM_LAST,0x6DBBC6,20x20,16,400,X*0.001,True,2,0,169,9810,0
+BMWtchdiag_pct_WgPLo_M,0x6DDBE8,4x4,16,16,X*0.003051758,True,2,0,360,65535,16
+BMWtchdiag_pct_WgPHi_M,0x6DDC08,4x4,16,16,X*0.003051758,True,1,1,60621,64225,16
+BMWtchsp_rat_p_CmprPmp_T,0x6DE044,1x8,16,8,X*0.00006103516,True,1,1,42205,49152,8
+BMWtchsp_rat_p_CmprMax_M,0x6DE054,6x8,16,48,X*0.00006103516,True,2,0,32768,49152,48
+KF_MDIOP_1_TQE,0x6E2BC2,20x18,16,360,X*0.1,True,2,0,0,7650,0
+KL_TD_SOUND_MX_SPORT,0x6E381A,1x4,16,4,X*0.010,True,1,1,80,80,0
+KL_TD_SOUND_MX_FREI,0x6E3822,1x4,16,4,X*0.010,True,1,1,0,400,0
+KL_TD_SOUND_MX,0x6E382A,1x4,16,4,X*0.010,True,1,1,50,400,0
+BMWtqe_tqc_FlApplStgNorm_T,0x6E68DC,1x18,16,18,X*0.1,True,0,2,3330,4500,18
+KF_MD_RES_NST_KEY,0x6E6F0C,4x4,16,16,X*0.1,True,1,1,0,20,0
+KF_MDR_ABV_SPO_HS,0x6E75CE,12x10,16,120,X*0.00390625,True,2,0,0,25600,0
+KF_MDR_ABV_SPO2,0x6E77AE,12x10,16,120,X*0.00390625,True,2,0,0,25600,0
+KF_MDR_ABV_SPO,0x6E789E,12x10,16,120,X*0.00390625,True,2,0,0,25600,0
+K_TKW_WA,0x6EC4B6,1x2,16,2,X*0.01,True,0,2,11000,11100,0
+K_TKW_MX,0x6EC4C2,1x4,16,4,X*0.01,True,0,2,8500,11000,0
+BMWshl_ti_DlyMtSfu_T,0x6EDFC6,1x6,16,6,X*0.01,True,0,2,20,20,0
+BMWchas_lam_InjMpl_M,0x6EEE7C,10x10,16,100,X*0.0002441406*14.7,True,2,0,4076,4076,45
+BMWchas_lam_InjMplThr_M,0x6EEF44,10x10,16,100,X*0.0002441406*14.7,True,2,0,3842,4096,45
+BMWchas_p_RailInjSng_M,0x6EF04C,8x8,16,64,X*0.000610351563,True,2,0,13107,31130,0
+BMWchas_tq_ResExhFlpClsd_T,0x6EF114,1x8,16,8,X*0.1,True,1,1,0,10000,0
+BMWinjmon_fac_HppEff_M,0x6F0A50,4x8,16,32,X*0.00003051758,True,2,0,22938,32768,0
+KL_RFMIN_KRSTSYS,0x6F0B3C,1x8,16,8,X*0.010,True,1,1,14500,14500,0
+KF_ST_RKBAS_VVT,0x6F9B08,12x12,16,144,X*0.04882812,True,1,1,988,6267,0
+KF_ST_RKBAS_GD,0x6F9CCA,10x10,16,100,X*0.04882812,True,1,1,1155,6145,0
+KF_LABAS_2,0x6FA1FA,17x18,16,306,X/4096*14.7,True,2,0,3154,4112,160
+KF_LABAS_1,0x6FA45E,17x18,16,306,X/4096*14.7,True,2,0,3317,4096,167
+KF_FMS_DKPSRPL_MX,0x6FB116,6x6,16,36,X*0.00003051758,True,2,0,52429,65535,18
+KF_FMS_DKPSRPL_MN,0x6FB15E,6x6,16,36,X*0.00003051758,True,2,0,0,13107,18
+K_EDA_P_ANZ_SPORT_BS_SCAL_CODE,0x6FC899,1x4,8,4,X,True,0,2,40,50,4
+K_EDA_MD_ANZ_BS_SCAL_CODE,0x6FC89D,1x5,8,5,X,True,0,2,10,60,4
+KL_ENA_NREG_DSC,0x6FEC98,1x6,8,6,X,True,0,2,0,1,0
+KL_MD_K_MAX_VL_HS,0x6F8CA0,1x12,16,12,X,True,1,1,500,500,12
+KL_MD_K_MAX_VL,0x6F8CB8,1x12,16,12,X,True,1,1,500,500,12
+KL_MD_K_MAX_RST_HS,0x6F8CD0,1x12,16,12,X,True,1,1,150,320,0
+KL_MD_K_MAX_RST,0x6F8CE8,1x12,16,12,X,True,1,1,150,320,0
+KL_MD_K_MAX_BST_HS,0x6F8D00,1x12,16,12,X,True,1,1,150,320,12
+KL_MD_K_MAX_BST,0x6F8D18,1x12,16,12,X,True,1,1,291,485,12
+"Element width 16-bit is established: the 144 bytes contain exactly two distinct uint16 values, 30000 (stock) and 32767 (Stage 2). 72 cells. A 6x12 grouping is consistent with six 12-point ascending arrays found nearby at 0x6F8022+24k, but that linkage is NOT established, so this is presented as a flat 72-point array. Identity, units and function unknown.",0x6F7F2E,1x72,16,72,X,True,0,2,30000,30000,72
+"Stock bytes match a local reference image verbatim (offset 0x6B234C, delta +0x3F854, 1010 contiguous identical bytes), so this is inherited calibration content. No reference names this span. Element width, dimensions, identity and units unknown; shown as raw bytes.",0x6F1BA0,1x128,8,128,X,True,0,2,4,252,44
+"Stock bytes match a local reference image verbatim (offset 0x6F1CA4, delta +0x3EDE8). No reference names this span. Element width, dimensions, identity and units unknown; shown as raw bytes.",0x730A8C,1x146,8,146,X,True,0,2,0,200,128
+"Largest unidentified changed region (288 of 3821 bytes). Stock bytes match a local reference image verbatim (offset 0x6F23A0, delta +0x3EE14, 533 contiguous identical bytes), so it is inherited calibration content, not code or datalog. No reference names this span. Element width, dimensions, identity and units unknown; shown as raw bytes.",0x7311B4,1x434,8,434,X,True,0,2,0,255,288
+"Stock bytes match a local reference image verbatim (offset 0x6C39BB, delta +0x3F7D0, 3579 contiguous identical bytes). NOT identified as ignition: the match starts where the changed region starts, which does not establish a map boundary, and the content delta +0x3F7D0 conflicts with the independently located breakpoint-axis delta +0x3F9CE. No dimensions asserted. Shown as raw bytes; identity and units unknown.",0x70318B,1x133,8,133,X,True,0,2,0,254,91
+"Stock bytes match a local reference image verbatim (offset 0x6C3AFB, delta +0x3F7D0, 3259 contiguous identical bytes). NOT identified as ignition - see the note on UNVERIFIED_REGION_70318B for why. No dimensions asserted. Identity and units unknown.",0x7032CB,1x133,8,133,X,True,0,2,0,254,91
+"Stock bytes match a local reference image verbatim (offset 0x6C39BB, 123 contiguous identical bytes). NOT identified as ignition - see the note on UNVERIFIED_REGION_70318B. No dimensions asserted. Identity and units unknown.",0x70340B,1x133,8,133,X,True,0,2,0,254,91
