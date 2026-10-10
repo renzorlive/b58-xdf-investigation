@@ -1,0 +1,3161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XDFFORMAT version="1.80">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <description>Combined display XDF for BMW B58 / MG1CS003, EPK R0C2J772B, EPST R0C9J772B, PST S15A-17-11-490, HW 10SW002828.
+Merges 75 inspection tables with 10 ignition-timing tables into one file. Load against the matching 8126464-byte BIN. Do not write to the ECU.
+Ignition section: map names, dimensions and the x0.5 deg conversion come from the Bosch A2L R0C9J8B2B_3081-080_017_002.a2l, which describes S15A-18. This target is S15A-17, so identity, signedness, scaling, units and axis semantics are INHERITED, not proven for this image. Addresses and byte spans were verified against the target binary itself.
+Three raw [UNVERIFIED] windows from the inspection set are omitted (70318B, 7032CB, 70340B): their bytes are now identified as KF_ZW_S_PF1, KF_ZW_PF2 and KF_ZW_PF1, and are shown with real axes in the ignition section instead.
+Exploratory display only. Not a validated tuning definition.</description>
+    <BASEOFFSET offset="0" subtract="0"/>
+    <DEFAULTS datasizeinbits="16" sigdigits="3" outputtype="1" signed="0" lsbfirst="0" float="0"/>
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x7c0000" regioncolor="0x0" regionflags="0x0" name="Binary File" desc="bin edited by this XDF"/>
+    <CATEGORY index="0" type="0" name="Fan PWM based on coolant act to target delta"/>
+    <CATEGORY index="1" type="0" name="Intake Waterpump flow ( IAT minus ambient temp, ambient temp)"/>
+    <CATEGORY index="2" type="0" name="Torque Reduction Factor (RPM)"/>
+    <CATEGORY index="3" type="0" name="Coolant target (normal)"/>
+    <CATEGORY index="4" type="0" name="Coolant target (high)"/>
+    <CATEGORY index="5" type="0" name="Anpassung des Moments für die Performanceanzeige0"/>
+    <CATEGORY index="6" type="0" name="Performance gauge scaling"/>
+    <CATEGORY index="7" type="0" name="Mass flow ratio (ceiling) for diag sensor pressure in CP"/>
+    <CATEGORY index="8" type="0" name="Mass flow ratio (floor) for diag sensor pressure in CP"/>
+    <CATEGORY index="9" type="0" name="Max load for L-stoich Adapt."/>
+    <CATEGORY index="10" type="0" name="Lambda ceiling component protection - filling"/>
+    <CATEGORY index="11" type="0" name="EGT Pre-cat Ceiling for switch to component protection"/>
+    <CATEGORY index="12" type="0" name="EGT Cat Ceiling for switch to component protection"/>
+    <CATEGORY index="13" type="0" name="EGT Turbo Ceiling for switch to component protection"/>
+    <CATEGORY index="14" type="0" name="EKP Ansteuerung Drehzahl in PWM"/>
+    <CATEGORY index="15" type="0" name="Max rail diff"/>
+    <CATEGORY index="16" type="0" name="Momentenreserve, ab er die Abgasklappe aus akustischen Gründen geschlo"/>
+    <CATEGORY index="17" type="0" name="Lambda Limit (Rich)"/>
+    <CATEGORY index="18" type="0" name="Throttle aggression in overload"/>
+    <CATEGORY index="19" type="0" name="Vanos EX (warm) 2"/>
+    <CATEGORY index="20" type="0" name="Vanos EX (warm) 1"/>
+    <CATEGORY index="21" type="0" name="Vanos EX (cold) 2"/>
+    <CATEGORY index="22" type="0" name="Vanos EX (cold) 1"/>
+    <CATEGORY index="23" type="0" name="Vanos IN (warm) 2"/>
+    <CATEGORY index="24" type="0" name="Vanos IN (warm) 1"/>
+    <CATEGORY index="25" type="0" name="Vanos IN (cold) 2"/>
+    <CATEGORY index="26" type="0" name="Vanos IN (cold) 1"/>
+    <CATEGORY index="27" type="0" name="Max load (spool)"/>
+    <CATEGORY index="28" type="0" name="Max load (main)"/>
+    <CATEGORY index="29" type="0" name="Max naturally aspirated volumetric efficiency"/>
+    <CATEGORY index="30" type="0" name="Max valve lift (10ms)"/>
+    <CATEGORY index="31" type="0" name="Kennfeld maximaler Einlassventilhub"/>
+    <CATEGORY index="32" type="0" name="Valvetronic at start (tmot)"/>
+    <CATEGORY index="33" type="0" name="Valve lift (main)"/>
+    <CATEGORY index="34" type="0" name="PID correction ceiling"/>
+    <CATEGORY index="35" type="0" name="PID correction floor"/>
+    <CATEGORY index="36" type="0" name="Boost set limit"/>
+    <CATEGORY index="37" type="0" name="Boost Limit multiplier"/>
+    <CATEGORY index="38" type="0" name="Load to torque"/>
+    <CATEGORY index="39" type="0" name="Burble duration sport"/>
+    <CATEGORY index="40" type="0" name="Burble duration sport (custom)"/>
+    <CATEGORY index="41" type="0" name="Burble duration (base)"/>
+    <CATEGORY index="42" type="0" name="Torque request ceiling"/>
+    <CATEGORY index="43" type="0" name="Moment reserve after start"/>
+    <CATEGORY index="44" type="0" name="Relative torque request sport MT 1"/>
+    <CATEGORY index="45" type="0" name="Relative torque request sport 2"/>
+    <CATEGORY index="46" type="0" name="Relative torque request sport"/>
+    <CATEGORY index="47" type="0" name="Coolant target (warmup-vWM)"/>
+    <CATEGORY index="48" type="0" name="Coolant target (misc)"/>
+    <CATEGORY index="49" type="0" name="MT shift delay"/>
+    <CATEGORY index="50" type="0" name="Lambda setpoint for multiple Injection"/>
+    <CATEGORY index="51" type="0" name="Lambda setpoint for multiple Injection at throttled operation mode"/>
+    <CATEGORY index="52" type="0" name="Rail pressure setpoint for single injection"/>
+    <CATEGORY index="53" type="0" name="Injection map Factor Efficiency High-pressure pump"/>
+    <CATEGORY index="54" type="0" name="Min load for load limiting from fueling"/>
+    <CATEGORY index="55" type="0" name="Kennfeld Basis-Rk Menge VVT Betrieb"/>
+    <CATEGORY index="56" type="0" name="Kennfeld Basis-Rk Menge gedrosselter Betrieb"/>
+    <CATEGORY index="57" type="0" name="Fuel (Bank 2)"/>
+    <CATEGORY index="58" type="0" name="Fuel (Bank 1)"/>
+    <CATEGORY index="59" type="0" name="Mass flow ratio (ceiling) for diag MAF"/>
+    <CATEGORY index="60" type="0" name="Mass flow ratio (floor) for diag MAF"/>
+    <CATEGORY index="61" type="0" name="Perf display scaling - power"/>
+    <CATEGORY index="62" type="0" name="Perf display scaling - torque"/>
+    <CATEGORY index="63" type="0" name="Rev match active depending on DSC Mode"/>
+    <CATEGORY index="64" type="0" name="Speed-dependent full load curve (half step)"/>
+    <CATEGORY index="65" type="0" name="Speed-dependent full load curve"/>
+    <CATEGORY index="66" type="0" name="Speed-dependent launch control curve (half step)"/>
+    <CATEGORY index="67" type="0" name="Speed-dependent launch control curve"/>
+    <CATEGORY index="68" type="0" name="Speed-dependent boost curve, manual transmission"/>
+    <CATEGORY index="69" type="0" name="Speed-dependent boost curve"/>
+    <CATEGORY index="100" type="0" name="UNVERIFIED REGIONS (raw, no identity)"/>
+    <CATEGORY index="101" type="0" name="Ignition timing"/>
+  </XDFHEADER>
+  <XDFTABLE uniqueid="1" flags="0x0">
+    <title>Fan PWM based on coolant act to target delta</title>
+    <description>KL_NEL_TMOT</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C4CDC" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.390625">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="2" flags="0x0">
+    <title>Intake Waterpump flow ( IAT minus ambient temp, ambient temp)</title>
+    <description>KF_VSEWP_LLK_TANS</description>
+    <CATEGORYMEM index="0" category="1"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C502E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C5022" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C503A" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="3" flags="0x0">
+    <title>Torque Reduction Factor (RPM)</title>
+    <description>KL_MDRED_NKW</description>
+    <CATEGORYMEM index="0" category="2"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C54C2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C54CE" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0078125">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="4" flags="0x0">
+    <title>Coolant target (normal)</title>
+    <description>K_TKW_NO</description>
+    <CATEGORYMEM index="0" category="3"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C5536" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/10">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C553E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/100">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="5" flags="0x0">
+    <title>Coolant target (high)</title>
+    <description>KL_TKW_HI</description>
+    <CATEGORYMEM index="0" category="4"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C5548" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/10">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C5550" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/100">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="6" flags="0x0">
+    <title>Anpassung des Moments für die Performanceanzeige0</title>
+    <description>KF_EDA_ANZ_SPORT_MD_EM1_IST</description>
+    <CATEGORYMEM index="0" category="5"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C9D74" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C9CA8" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="7" flags="0x0">
+    <title>Performance gauge scaling</title>
+    <description>KF_EDA_ANZ_SPORT_MDK_IST</description>
+    <CATEGORYMEM index="0" category="6"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C9D50" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6C9D80" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6C9CF0" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="8" flags="0x0">
+    <title>Mass flow ratio (ceiling) for diag sensor pressure in CP</title>
+    <description>KF_FMS_HFMPL_MX</description>
+    <CATEGORYMEM index="0" category="7"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6CD3BA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6CD3A2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6CD312" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="9" flags="0x0">
+    <title>Mass flow ratio (floor) for diag sensor pressure in CP</title>
+    <description>KF_FMS_HFMPL_MN</description>
+    <CATEGORYMEM index="0" category="8"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6CD3C6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6CD3AE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6CD35A" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="10" flags="0x0">
+    <title>Max load for L-stoich Adapt.</title>
+    <description>BMWinjafs_fac_RatAirMax_T</description>
+    <CATEGORYMEM index="0" category="9"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6CED34" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6CED1C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="11" flags="0x0">
+    <title>Lambda ceiling component protection - filling</title>
+    <description>KF_BSLGF</description>
+    <CATEGORYMEM index="0" category="10"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D2586" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D2530" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D2446" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0002441406*14.7">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="12" flags="0x0">
+    <title>EGT Pre-cat Ceiling for switch to component protection</title>
+    <description>KF_TA_VKSOLL</description>
+    <CATEGORYMEM index="0" category="11"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D27F0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D2780" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D26F0" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="13" flags="0x0">
+    <title>EGT Cat Ceiling for switch to component protection</title>
+    <description>KF_TA_IKSOLL</description>
+    <CATEGORYMEM index="0" category="12"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D27F8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D2788" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D2710" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="14" flags="0x0">
+    <title>EGT Turbo Ceiling for switch to component protection</title>
+    <description>KF_TA_ATLSOLL</description>
+    <CATEGORYMEM index="0" category="13"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D2800" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D2790" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D2730" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="15" flags="0x0">
+    <title>EKP Ansteuerung Drehzahl in PWM</title>
+    <description>BMWlpa_rat_EfpPwm_T</description>
+    <CATEGORYMEM index="0" category="14"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D410E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D3FFE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="16" flags="0x0">
+    <title>Max rail diff</title>
+    <description>BMWlpsd_p_RailDifMax_T</description>
+    <CATEGORYMEM index="0" category="15"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D4692" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.000610351563">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D468A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.000610351563">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="17" flags="0x0">
+    <title>Momentenreserve, ab er die Abgasklappe aus akustischen Gründen geschlo [0x6D4EAC]</title>
+    <description>BMWgpfheat_tq_ResExhFlpClsd_T</description>
+    <CATEGORYMEM index="0" category="16"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D4F9C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D4EAC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="18" flags="0x0">
+    <title>Lambda Limit (Rich)</title>
+    <description>KF_LAMIN_H</description>
+    <CATEGORYMEM index="0" category="17"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D7818" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D780C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D77C4" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0002441406*14.7">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="19" flags="0x0">
+    <title>Throttle aggression in overload</title>
+    <description>KF_FTRANSVL</description>
+    <CATEGORYMEM index="0" category="18"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D8796" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D80F2" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>2</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00001525879">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="20" flags="0x0">
+    <title>Vanos EX (warm) 2</title>
+    <description>GKF_ASPR_NORM_WARM_PF2</description>
+    <CATEGORYMEM index="0" category="19"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9250" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D91F0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D8BF0" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="21" flags="0x0">
+    <title>Vanos EX (warm) 1</title>
+    <description>GKF_ASPR_NORM_WARM_PF1</description>
+    <CATEGORYMEM index="0" category="20"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9270" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9208" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D8D70" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="22" flags="0x0">
+    <title>Vanos EX (cold) 2</title>
+    <description>GKF_ASPR_NORM_KALT_PF2</description>
+    <CATEGORYMEM index="0" category="21"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9250" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D91F0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D8EF0" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="23" flags="0x0">
+    <title>Vanos EX (cold) 1</title>
+    <description>GKF_ASPR_NORM_KALT_PF1</description>
+    <CATEGORYMEM index="0" category="22"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9270" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9208" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D9070" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="24" flags="0x0">
+    <title>Vanos IN (warm) 2</title>
+    <description>GKF_ESPR_NORM_WARM_PF2</description>
+    <CATEGORYMEM index="0" category="23"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9D4A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9CEA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D96EA" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="25" flags="0x0">
+    <title>Vanos IN (warm) 1</title>
+    <description>GKF_ESPR_NORM_WARM_PF1</description>
+    <CATEGORYMEM index="0" category="24"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9D6A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9D02" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D986A" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="26" flags="0x0">
+    <title>Vanos IN (cold) 2</title>
+    <description>GKF_ESPR_NORM_KALT_PF2</description>
+    <CATEGORYMEM index="0" category="25"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9D4A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9CEA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D99EA" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="27" flags="0x0">
+    <title>Vanos IN (cold) 1</title>
+    <description>GKF_ESPR_NORM_KALT_PF1</description>
+    <CATEGORYMEM index="0" category="26"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9D6A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>16</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6D9D02" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D9B6A" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="28" flags="0x0">
+    <title>Max load (spool)</title>
+    <description>KL_RF_MAX_UESP</description>
+    <CATEGORYMEM index="0" category="27"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA1B6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D9DC6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/100">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="29" flags="0x0">
+    <title>Max load (main)</title>
+    <description>KL_RF_MAX</description>
+    <CATEGORYMEM index="0" category="28"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA1CE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6D9DDE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/100">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="30" flags="0x0">
+    <title>Max naturally aspirated volumetric efficiency</title>
+    <description>For naturally aspirated operation, should not exceed 100% KL_LAMX</description>
+    <CATEGORYMEM index="0" category="29"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA20A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>18</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DA1E6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>2</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.01">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="31" flags="0x0">
+    <title>Max valve lift (10ms)</title>
+    <description>KF_HUB_GRDMX</description>
+    <CATEGORYMEM index="0" category="30"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA744" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA72C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.001">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DA664" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>2</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.001">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="32" flags="0x0">
+    <title>Kennfeld maximaler Einlassventilhub</title>
+    <description>KF_EHUB_MX</description>
+    <CATEGORYMEM index="0" category="31"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA750" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DA718" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DA6AC" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>2</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.001">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="33" flags="0x0">
+    <title>Valvetronic at start (tmot)</title>
+    <description>KF_HUBESTM</description>
+    <CATEGORYMEM index="0" category="32"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DC37E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DAA86" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.001">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="34" flags="0x0">
+    <title>Valve lift (main)</title>
+    <description>GKF_EHUB_NORM_WARM_LAST</description>
+    <CATEGORYMEM index="0" category="33"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DC356" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>20</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DC21E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>20</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DBBC6" mmedelementsizebits="16" mmedrowcount="20" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.001">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="35" flags="0x0">
+    <title>PID correction ceiling</title>
+    <description>BMWtchdiag_pct_WgPLo_M</description>
+    <CATEGORYMEM index="0" category="34"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DDCAC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.125">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DDC9C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0001220703">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DDBE8" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="36" flags="0x0">
+    <title>PID correction floor</title>
+    <description>BMWtchdiag_pct_WgPHi_M</description>
+    <CATEGORYMEM index="0" category="35"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DDCA4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0001220703">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DDC08" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="37" flags="0x0">
+    <title>Boost set limit</title>
+    <description>BMWtchsp_rat_p_CmprPmp_T</description>
+    <CATEGORYMEM index="0" category="36"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DE128" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.03125/3.6">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DE044" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00006103516">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="38" flags="0x0">
+    <title>Boost Limit multiplier</title>
+    <description>BMWtchsp_rat_p_CmprMax_M</description>
+    <CATEGORYMEM index="0" category="37"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DE138" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.03125/3.6">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6DE11C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6DE054" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00006103516">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="39" flags="0x0">
+    <title>Load to torque</title>
+    <description>KF_MDIOP_1_TQE</description>
+    <CATEGORYMEM index="0" category="38"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E2E92" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>18</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E2EB6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E2BC2" mmedelementsizebits="16" mmedrowcount="20" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="40" flags="0x0">
+    <title>Burble duration sport</title>
+    <description>KL_TD_SOUND_MX_SPORT</description>
+    <CATEGORYMEM index="0" category="39"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E3832" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E381A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="41" flags="0x0">
+    <title>Burble duration sport (custom)</title>
+    <description>KL_TD_SOUND_MX_FREI</description>
+    <CATEGORYMEM index="0" category="40"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E383A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E3822" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="42" flags="0x0">
+    <title>Burble duration (base)</title>
+    <description>KL_TD_SOUND_MX</description>
+    <CATEGORYMEM index="0" category="41"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E3842" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E382A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="43" flags="0x0">
+    <title>Torque request ceiling</title>
+    <description>BMWtqe_tqc_FlApplStgNorm_T</description>
+    <CATEGORYMEM index="0" category="42"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E68DC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="44" flags="0x0">
+    <title>Moment reserve after start</title>
+    <description>KF_MD_RES_NST_KEY</description>
+    <CATEGORYMEM index="0" category="43"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E6F4C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E6F0C" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="45" flags="0x0">
+    <title>Relative torque request sport MT 1</title>
+    <description>KF_MDR_ABV_SPO_HS</description>
+    <CATEGORYMEM index="0" category="44"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E816A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E8266" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02441406">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E75CE" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00390625">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="46" flags="0x0">
+    <title>Relative torque request sport 2</title>
+    <description>KF_MDR_ABV_SPO2</description>
+    <CATEGORYMEM index="0" category="45"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E8192" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E8296" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02441406">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E77AE" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00390625">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="47" flags="0x0">
+    <title>Relative torque request sport</title>
+    <description>KF_MDR_ABV_SPO</description>
+    <CATEGORYMEM index="0" category="46"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E81A6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6E82AE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.02441406">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6E789E" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00390625">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="48" flags="0x0">
+    <title>Coolant target (warmup-vWM)</title>
+    <description>K_TKW_WA</description>
+    <CATEGORYMEM index="0" category="47"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EC4B6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.01">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="49" flags="0x0">
+    <title>Coolant target (misc)</title>
+    <description>K_TKW_MX</description>
+    <CATEGORYMEM index="0" category="48"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EC4C2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.01">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="50" flags="0x0">
+    <title>MT shift delay</title>
+    <description>BMWshl_ti_DlyMtSfu_T</description>
+    <CATEGORYMEM index="0" category="49"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EDFC6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.01">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="51" flags="0x0">
+    <title>Lambda setpoint for multiple Injection</title>
+    <description>BMWchas_lam_InjMpl_M</description>
+    <CATEGORYMEM index="0" category="50"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EFBF8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EF964" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EEE7C" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0002441406*14.7">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="52" flags="0x0">
+    <title>Lambda setpoint for multiple Injection at throttled operation mode</title>
+    <description>BMWchas_lam_InjMplThr_M</description>
+    <CATEGORYMEM index="0" category="51"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EFC0C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EF978" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EEF44" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0002441406*14.7">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="53" flags="0x0">
+    <title>Rail pressure setpoint for single injection</title>
+    <description>BMWchas_p_RailInjSng_M</description>
+    <CATEGORYMEM index="0" category="52"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EFBA4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EF7C0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.048828125">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EF04C" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.000610351563">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="54" flags="0x0">
+    <title>Momentenreserve, ab er die Abgasklappe aus akustischen Gründen geschlo [0x6EF114]</title>
+    <description>BMWchas_tq_ResExhFlpClsd_T</description>
+    <CATEGORYMEM index="0" category="16"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6EFAC4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6EF114" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="55" flags="0x0">
+    <title>Injection map Factor Efficiency High-pressure pump</title>
+    <description>BMWinjmon_fac_HppEff_M</description>
+    <CATEGORYMEM index="0" category="53"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F0B14" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F0AF4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.0006103516">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F0A50" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>2</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="56" flags="0x0">
+    <title>Min load for load limiting from fueling</title>
+    <description>KL_RFMIN_KRSTSYS</description>
+    <CATEGORYMEM index="0" category="54"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F0B4C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F0B3C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="57" flags="0x0">
+    <title>Kennfeld Basis-Rk Menge VVT Betrieb</title>
+    <description>KF_ST_RKBAS_VVT</description>
+    <CATEGORYMEM index="0" category="55"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F9C6C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F9B08" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.04882812">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="58" flags="0x0">
+    <title>Kennfeld Basis-Rk Menge gedrosselter Betrieb</title>
+    <description>KF_ST_RKBAS_GD</description>
+    <CATEGORYMEM index="0" category="56"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F9E1E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>10</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F9CCA" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.04882812">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="59" flags="0x0">
+    <title>Fuel (Bank 2)</title>
+    <description>KF_LABAS_2</description>
+    <CATEGORYMEM index="0" category="57"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FA6F0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>18</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FA6CE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>17</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.01">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FA1FA" mmedelementsizebits="16" mmedrowcount="17" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/4096*14.7">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="60" flags="0x0">
+    <title>Fuel (Bank 1)</title>
+    <description>KF_LABAS_1</description>
+    <CATEGORYMEM index="0" category="58"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FA6F0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>18</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*1">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FA6CE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>17</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.01">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FA45E" mmedelementsizebits="16" mmedrowcount="17" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X/4096*14.7">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="61" flags="0x0">
+    <title>Mass flow ratio (ceiling) for diag MAF</title>
+    <description>KF_FMS_DKPSRPL_MX</description>
+    <CATEGORYMEM index="0" category="59"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FB1D6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FB1B2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FB116" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="62" flags="0x0">
+    <title>Mass flow ratio (floor) for diag MAF</title>
+    <description>KF_FMS_DKPSRPL_MN</description>
+    <CATEGORYMEM index="0" category="60"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FB1E2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.010">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6FB1BE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FB15E" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>3</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.00003051758">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="63" flags="0x0">
+    <title>Perf display scaling - power</title>
+    <description>K_EDA_P_ANZ_SPORT_BS_SCAL_CODE</description>
+    <CATEGORYMEM index="0" category="61"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FC899" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="64" flags="0x0">
+    <title>Perf display scaling - torque</title>
+    <description>K_EDA_MD_ANZ_BS_SCAL_CODE</description>
+    <CATEGORYMEM index="0" category="62"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FC89D" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="65" flags="0x0">
+    <title>Rev match active depending on DSC Mode</title>
+    <description>KL_ENA_NREG_DSC</description>
+    <CATEGORYMEM index="0" category="63"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6FEC98" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>2</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="66" flags="0x0">
+    <title>Speed-dependent full load curve (half step)</title>
+    <description>KL_MD_K_MAX_VL_HS</description>
+    <CATEGORYMEM index="0" category="64"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F8D98" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F8CA0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="67" flags="0x0">
+    <title>Speed-dependent full load curve</title>
+    <description>KL_MD_K_MAX_VL</description>
+    <CATEGORYMEM index="0" category="65"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F8DB0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F8CB8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="68" flags="0x0">
+    <title>Speed-dependent launch control curve (half step)</title>
+    <description>KL_MD_K_MAX_RST_HS</description>
+    <CATEGORYMEM index="0" category="66"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F8DC8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F8CD0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="69" flags="0x0">
+    <title>Speed-dependent launch control curve</title>
+    <description>KL_MD_K_MAX_RST</description>
+    <CATEGORYMEM index="0" category="67"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F8DE0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F8CE8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="70" flags="0x0">
+    <title>Speed-dependent boost curve, manual transmission</title>
+    <description>KL_MD_K_MAX_BST_HS</description>
+    <CATEGORYMEM index="0" category="68"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F8DF8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F8D00" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="71" flags="0x0">
+    <title>Speed-dependent boost curve</title>
+    <description>KL_MD_K_MAX_BST</description>
+    <CATEGORYMEM index="0" category="69"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6F8E10" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F8D18" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>1</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="72" flags="0x0">
+    <title>UNVERIFIED_REGION_6F7F2E [UNVERIFIED]</title>
+    <description>Element width 16-bit is established: the 144 bytes contain exactly two distinct uint16 values, 30000 (stock) and 32767 (Stage 2). 72 cells. A 6x12 grouping is consistent with six 12-point ascending arrays found nearby at 0x6F8022+24k, but that linkage is NOT established, so this is presented as a flat 72-point array. Identity, units and function unknown.</description>
+    <CATEGORYMEM index="0" category="100"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F7F2E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="72" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="73" flags="0x0">
+    <title>UNVERIFIED_REGION_6F1BA0 [UNVERIFIED]</title>
+    <description>Stock bytes match a local reference image verbatim (offset 0x6B234C, delta +0x3F854, 1010 contiguous identical bytes), so this is inherited calibration content. No reference names this span. Element width, dimensions, identity and units unknown; shown as raw bytes.</description>
+    <CATEGORYMEM index="0" category="100"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x6F1BA0" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="128" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="74" flags="0x0">
+    <title>UNVERIFIED_REGION_730A8C [UNVERIFIED]</title>
+    <description>Stock bytes match a local reference image verbatim (offset 0x6F1CA4, delta +0x3EDE8). No reference names this span. Element width, dimensions, identity and units unknown; shown as raw bytes.</description>
+    <CATEGORYMEM index="0" category="100"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x730A8C" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="146" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="75" flags="0x0">
+    <title>UNVERIFIED_REGION_7311B4 [UNVERIFIED]</title>
+    <description>Largest unidentified changed region (288 of 3821 bytes). Stock bytes match a local reference image verbatim (offset 0x6F23A0, delta +0x3EE14, 533 contiguous identical bytes), so it is inherited calibration content, not code or datalog. No reference names this span. Element width, dimensions, identity and units unknown; shown as raw bytes.</description>
+    <CATEGORYMEM index="0" category="100"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x7311B4" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="434" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="76" flags="0x0">
+    <title>KF_ZW_PF1  - Base ignition angle path 1</title>
+    <description>KF_ZW_PF1  - Base ignition angle path 1  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x703350. X axis (Nkw, 1/min) at 0x6EC656. Y axis (load, %) at 0x6EC596.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells, +11..+51 deg.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec656" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec596" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x703350" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="77" flags="0x0">
+    <title>KF_ZW_PF2  - Base ignition angle path 2</title>
+    <description>KF_ZW_PF2  - Base ignition angle path 2  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x703210. X axis (Nkw, 1/min) at 0x6EC62E. Y axis (load, %) at 0x6EC576.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec62e" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec576" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x703210" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="78" flags="0x0">
+    <title>KF_ZW_S_PF1 - Base ignition angle path 1 safe</title>
+    <description>KF_ZW_S_PF1 - Base ignition angle path 1 safe  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x7030D0. X axis (Nkw, 1/min) at 0x6EC606. Y axis (load, %) at 0x6EC556.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells, +11..+48.5 deg.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec606" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec556" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7030d0" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="79" flags="0x0">
+    <title>KF_ZW_S_PF2 - Base ignition angle path 2 safe</title>
+    <description>KF_ZW_S_PF2 - Base ignition angle path 2 safe  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x702F90. X axis (Nkw, 1/min) at 0x6EC5DE. Y axis (load, %) at 0x6EC536.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec5de" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec536" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x702f90" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="80" flags="0x0">
+    <title>KF_ZW_UESP_PF1 - Base ignition angle scavenging p1</title>
+    <description>KF_ZW_UESP_PF1 - Base ignition angle scavenging p1  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=14 x 10 signed int8 at 0x702F04. X axis (Nkw, 1/min) at 0x6EC5CA. Y axis (load, %) at 0x6EC51A.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec5ca" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec51a" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>14</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x702f04" mmedelementsizebits="8" mmedrowcount="14" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="81" flags="0x0">
+    <title>KF_ZW_UESP_PF2 - Base ignition angle scavenging p2</title>
+    <description>KF_ZW_UESP_PF2 - Base ignition angle scavenging p2  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=14 x 10 signed int8 at 0x702E78. X axis (Nkw, 1/min) at 0x6EC5B6. Y axis (load, %) at 0x6EC4FE.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec5b6" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec4fe" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>14</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x702e78" mmedelementsizebits="8" mmedrowcount="14" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="82" flags="0x0">
+    <title>KF_ZW_VP_PF1 - Ignition angle with VANOS at stop p1</title>
+    <description>KF_ZW_VP_PF1 - Ignition angle with VANOS at stop p1  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x7072A8. X axis (Nkw, 1/min) at 0x6FA9B2. Y axis (load, %) at 0x6FA96A.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. VANOS map. Axis pair from a differently-laid-out block; content verified.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa9b2" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa96a" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7072a8" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="83" flags="0x0">
+    <title>KF_ZW_VP_PF2 - Ignition angle with VANOS at stop p2</title>
+    <description>KF_ZW_VP_PF2 - Ignition angle with VANOS at stop p2  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x707168. X axis (Nkw, 1/min) at 0x6FA98A. Y axis (load, %) at 0x6FA94A.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. VANOS map. Axis pair from a differently-laid-out block; content verified.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa98a" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa94a" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x707168" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="84" flags="0x0">
+    <title>KF_ZWMIN_WSOT - Min ignition angle, sound tuning warm</title>
+    <description>KF_ZWMIN_WSOT - Min ignition angle, sound tuning warm  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=8 x 8 signed int8 at 0x706DEC. X axis (Nkw, 1/min) at 0x6F99AE. Y axis (load, %) at 0x6F996E.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. 8x8 limit map. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f99ae" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f996e" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x706dec" mmedelementsizebits="8" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="85" flags="0x0">
+    <title>KF_ZWMIN_KSOT - Min ignition angle, sound tuning cold</title>
+    <description>KF_ZWMIN_KSOT - Min ignition angle, sound tuning cold  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=8 x 8 signed int8 at 0x706E2C. X axis (Nkw, 1/min) at 0x6F99BE. Y axis (load, %) at 0x6F997E.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. 8x8 limit map. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="101"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f99be" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f997e" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x706e2c" mmedelementsizebits="8" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>

@@ -18,8 +18,9 @@ import xml.etree.ElementTree as ET
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DEFAULT_XDFS = [
+    'out/R0C2J772B_display.xdf',
+    'out/R0C2J772B_ignition_timing.xdf',
     'out/R0C2J772B_manual_inspection.xdf',
-    'out/R0C2J772B_timing_candidates.xdf',
 ]
 SAFE_EQ = re.compile(r'^[X0-9.*/]+$')
 
