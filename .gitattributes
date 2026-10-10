@@ -1,0 +1,16 @@
+# XDF files are data artifacts, not source code.
+#
+# Git must not rewrite their line endings. With core.autocrlf=true Git
+# normalises text files on commit and converts them back on checkout, which
+# silently changes an XDF's bytes and therefore its hash. That matters here
+# because these files are validated and distributed by hash:
+# out/R0C2J772B_ignition_timing.xdf was inspected in TunerPro in its CRLF
+# form, and that CRLF form is the canonical artifact stored in this repository.
+#
+# '-text' marks these paths as binary for end-of-line purposes: the blob is
+# written and checked out byte for byte, so a checkout on Windows and a
+# checkout on Linux produce identical files.
+#
+# The ECU firmware images (*iRom_ori, *iRom_stage2) are already treated as
+# binary by content auto-detection and need no rule here.
+*.xdf -text
