@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE XDFFORMAT [<!ELEMENT XDFFORMAT (XDFHEADER,XDFTABLE*)>
+<!ELEMENT XDFTABLE (title,description,CATEGORYMEM,XDFAXIS,XDFAXIS,XDFAXIS)>
+<!ELEMENT XDFAXIS (EMBEDDEDDATA?,units?,indexcount?,decimalpl?,min?,max?,outputtype?,datatype?,unittype?,embedinfo?,DALINK?,MATH?)>]>
+<!--
+Ignition timing maps for BMW B58 / MG1CS003, EPK R0C2J772B, EPST R0C9J772B,
+PST S15A-17-11-490, HW 10SW002828.
+
+Load this file ALONGSIDE R0C2J772B_manual_inspection.xdf. Do not write to the ECU.
+
+IDENTITY EVIDENCE
+  Symbol names, dimensions and the x0.5 deg conversion come from the Bosch A2L
+  "R0C9J8B2B_3081-080_017_002.a2l" (project R0C2J8B2B, MG1CS003). Addresses were
+  located in the TARGET image by exact byte-content search of each map and axis,
+  not by transferring reference addresses.
+  The A2L describes S15A-18. This target is S15A-17, so dimensions/identity are
+  inherited, not proven. Confidence per table is given in each description.
+
+CONFIDENCE
+  HIGH   = A2L symbol + byte-identical map content + byte-identical axis content
+           + physically correct monotonic behaviour + (for 4 maps) matching tuner edits.
+  MEDIUM = as above but located in a differently-laid-out region, so the axis/data
+           pairing rests on block-internal ordering rather than a single global offset.
+
+UNITS
+  X axis = Nkw  engine speed [1/min]  (breakpoints shown)
+  Y axis = NO_INPUT_QUANTITY, air-mass/load [%]
+  Z axis = ignition angle, crank degrees, SIGNED int8, phys = X*0.5  (range -64.0..+63.5)
+
+SCOPE / LIMITS
+  These maps are the BASE ignition angle, not the final commanded timing. Torque
+  limits, knock control, per-cylinder corrections and the air-mass path sit
+  upstream/downstream and are NOT described here.
+  Nothing here has been validated as a tuning definition. Do not tune from this file.
+-->
+<XDFFORMAT version="1.80">
+  <XDFHEADER>
+    <XDFAPPINFO/>
+    <BASEOFFSET>0x0</BASEOFFSET>
+    <DEFAULTS datatype="0" unittype="0" decimalpl="0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <MAP mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+    </DEFAULTS>
+    <REGION start="0x0" size="0x7c0000"/>
+    <CATEGORY index="0" type="0" name="Ignition timing"/>
+  </XDFHEADER>
+  <XDFTABLE uniqueid="1" flags="0x0">
+    <title>KF_ZW_PF1  - Base ignition angle path 1</title>
+    <description>KF_ZW_PF1  - Base ignition angle path 1  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x703350. X axis (Nkw, 1/min) at 0x6EC656. Y axis (load, %) at 0x6EC596.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells, +11..+51 deg.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec656" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec596" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x703350" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="2" flags="0x0">
+    <title>KF_ZW_PF2  - Base ignition angle path 2</title>
+    <description>KF_ZW_PF2  - Base ignition angle path 2  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x703210. X axis (Nkw, 1/min) at 0x6EC62E. Y axis (load, %) at 0x6EC576.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec62e" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec576" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x703210" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="3" flags="0x0">
+    <title>KF_ZW_S_PF1 - Base ignition angle path 1 safe</title>
+    <description>KF_ZW_S_PF1 - Base ignition angle path 1 safe  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x7030D0. X axis (Nkw, 1/min) at 0x6EC606. Y axis (load, %) at 0x6EC556.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells, +11..+48.5 deg.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec606" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec556" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7030d0" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="4" flags="0x0">
+    <title>KF_ZW_S_PF2 - Base ignition angle path 2 safe</title>
+    <description>KF_ZW_S_PF2 - Base ignition angle path 2 safe  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x702F90. X axis (Nkw, 1/min) at 0x6EC5DE. Y axis (load, %) at 0x6EC536.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Modified by Stage 2: 91 cells.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec5de" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec536" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x702f90" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="5" flags="0x0">
+    <title>KF_ZW_UESP_PF1 - Base ignition angle scavenging p1</title>
+    <description>KF_ZW_UESP_PF1 - Base ignition angle scavenging p1  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=14 x 10 signed int8 at 0x702F04. X axis (Nkw, 1/min) at 0x6EC5CA. Y axis (load, %) at 0x6EC51A.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec5ca" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec51a" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>14</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x702f04" mmedelementsizebits="8" mmedrowcount="14" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="6" flags="0x0">
+    <title>KF_ZW_UESP_PF2 - Base ignition angle scavenging p2</title>
+    <description>KF_ZW_UESP_PF2 - Base ignition angle scavenging p2  |  confidence: HIGH
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=14 x 10 signed int8 at 0x702E78. X axis (Nkw, 1/min) at 0x6EC5B6. Y axis (load, %) at 0x6EC4FE.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec5b6" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6ec4fe" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>14</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x702e78" mmedelementsizebits="8" mmedrowcount="14" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="7" flags="0x0">
+    <title>KF_ZW_VP_PF1 - Ignition angle with VANOS at stop p1</title>
+    <description>KF_ZW_VP_PF1 - Ignition angle with VANOS at stop p1  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x7072A8. X axis (Nkw, 1/min) at 0x6FA9B2. Y axis (load, %) at 0x6FA96A.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. VANOS map. Axis pair from a differently-laid-out block; content verified.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa9b2" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa96a" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7072a8" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="8" flags="0x0">
+    <title>KF_ZW_VP_PF2 - Ignition angle with VANOS at stop p2</title>
+    <description>KF_ZW_VP_PF2 - Ignition angle with VANOS at stop p2  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=16 x 20 signed int8 at 0x707168. X axis (Nkw, 1/min) at 0x6FA98A. Y axis (load, %) at 0x6FA94A.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. VANOS map. Axis pair from a differently-laid-out block; content verified.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa98a" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6fa94a" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x707168" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="9" flags="0x0">
+    <title>KF_ZWMIN_WSOT - Min ignition angle, sound tuning warm</title>
+    <description>KF_ZWMIN_WSOT - Min ignition angle, sound tuning warm  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=8 x 8 signed int8 at 0x706DEC. X axis (Nkw, 1/min) at 0x6F99AE. Y axis (load, %) at 0x6F996E.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. 8x8 limit map. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f99ae" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f996e" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x706dec" mmedelementsizebits="8" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="10" flags="0x0">
+    <title>KF_ZWMIN_KSOT - Min ignition angle, sound tuning cold</title>
+    <description>KF_ZWMIN_KSOT - Min ignition angle, sound tuning cold  |  confidence: MEDIUM
+Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
+Z=8 x 8 signed int8 at 0x706E2C. X axis (Nkw, 1/min) at 0x6F99BE. Y axis (load, %) at 0x6F997E.
+Address proof: map bytes and both axis arrays were located in the target by exact-content search of the reference image; all match byte-for-byte. 8x8 limit map. Unmodified in Stage 2.
+Values are BASE ignition angle in crank degrees; the final commanded timing includes torque/knock/per-cylinder corrections not described here.</description>
+    <CATEGORYMEM index="0" category="0"/>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f99be" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x6f997e" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <DALINK index="0"/>
+      <MATH equation="X">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x706e2c" mmedelementsizebits="8" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0"/>
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>-64.0</min>
+      <max>63.5</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1"/>
+      <MATH equation="X*0.5">
+        <VAR id="X"/>
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>
