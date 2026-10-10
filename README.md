@@ -62,8 +62,25 @@ were edited by the tuner (91 bytes each, all at the same internal offset `+0xBB`
   tested reproduces the stock value.
 - No claim is made that the Stage 2 calibration is safe, correct, or understood.
 
-## Not in this repo (deliberately)
+## ECU firmware — read this first
 
-The BIN files, `ref/`, `mgflasher-map-packs/` and the large reference zip are excluded via
-`.gitignore` — ECU firmware is proprietary, and the reference packs total ~2.5 GB. Re-obtain
-the reference packs from their own repositories if you need to re-run the build scripts.
+This repo **contains two ECU firmware images** in the repository root:
+
+| File | Size | MD5 | SHA-256 |
+|---|---|---|---|
+| `10SW002828_iRom_ori` | 8,126,464 | `40c3a007f425858e11cd9b0961dd321b` | `fcc9b8f21127627302a0a96823848f9fb11ecc6385f06adf4957e4c591698356` |
+| `10SW002828_iRom_stage2` | 8,126,464 | `251f649b87413ec83d01ef7a53bed2af` | `c544c1fd686e3f4edefd1d8d60b48464d434e02945a545044eac6745f4c8b8f5` |
+
+These are **proprietary BMW/Bosch firmware** (EPK `R0C2J772B`, EPST `R0C9J772B`,
+PST `S15A-17-11-490`, HW `10SW002828`), plus a third-party tune. They are published
+here at the repository owner's decision so the analysis can be reproduced and the XDFs
+tested. Check the licensing terms that apply to you before redistributing them. Anyone
+forking this repo redistributes them too.
+
+Verify the hashes before using them. Never flash these to an ECU.
+
+## Not in this repo
+
+`ref/`, `mgflasher-map-packs/` and the large reference zip remain excluded via
+`.gitignore` — the reference packs total ~2.5 GB. Re-obtain them from their own
+repositories if you need to re-run the build scripts.

@@ -1,8 +1,10 @@
-# Proprietary ECU firmware - never commit
-*.bin
-*.Bin
-10SW002828_iRom_ori
-10SW002828_iRom_stage2
+# Proprietary ECU firmware - never commit by default.
+# NOTE: this vehicle's own two reads are tracked deliberately (see README).
+#       Uncomment to exclude them again.
+# *.bin
+# *.Bin
+# 10SW002828_iRom_ori
+# 10SW002828_iRom_stage2
 *.hex
 *.s19
 *.ori
