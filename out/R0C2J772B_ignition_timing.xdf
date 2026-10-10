@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE XDFFORMAT [<!ELEMENT XDFFORMAT (XDFHEADER,XDFTABLE*)>
-<!ELEMENT XDFTABLE (title,description,CATEGORYMEM,XDFAXIS,XDFAXIS,XDFAXIS)>
-<!ELEMENT XDFAXIS (EMBEDDEDDATA?,units?,indexcount?,decimalpl?,min?,max?,outputtype?,datatype?,unittype?,embedinfo?,DALINK?,MATH?)>]>
 <!--
 Ignition timing maps for BMW B58 / MG1CS003, EPK R0C2J772B, EPST R0C9J772B,
 PST S15A-17-11-490, HW 10SW002828.
@@ -35,6 +32,8 @@ SCOPE / LIMITS
 -->
 <XDFFORMAT version="1.80">
   <XDFHEADER>
+    <flags>0x1</flags>
+    <description>Ignition timing maps for BMW B58 / MG1CS003. EPK R0C2J772B, EPST R0C9J772B, PST S15A-17-11-490, HW 10SW002828. EXPLORATORY - NOT A VALIDATED TUNING DEFINITION. Load alongside R0C2J772B_manual_inspection.xdf. Do not write to the ECU.</description>
     <XDFAPPINFO/>
     <BASEOFFSET>0x0</BASEOFFSET>
     <DEFAULTS datatype="0" unittype="0" decimalpl="0">
@@ -44,7 +43,7 @@ SCOPE / LIMITS
     <REGION start="0x0" size="0x7c0000"/>
     <CATEGORY index="0" type="0" name="Ignition timing"/>
   </XDFHEADER>
-  <XDFTABLE uniqueid="1" flags="0x0">
+  <XDFTABLE uniqueid="0x7001" flags="0x0">
     <title>KF_ZW_PF1  - Base ignition angle path 1</title>
     <description>KF_ZW_PF1  - Base ignition angle path 1  |  confidence: HIGH
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -93,7 +92,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="2" flags="0x0">
+  <XDFTABLE uniqueid="0x7002" flags="0x0">
     <title>KF_ZW_PF2  - Base ignition angle path 2</title>
     <description>KF_ZW_PF2  - Base ignition angle path 2  |  confidence: HIGH
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -142,7 +141,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="3" flags="0x0">
+  <XDFTABLE uniqueid="0x7003" flags="0x0">
     <title>KF_ZW_S_PF1 - Base ignition angle path 1 safe</title>
     <description>KF_ZW_S_PF1 - Base ignition angle path 1 safe  |  confidence: HIGH
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -191,7 +190,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="4" flags="0x0">
+  <XDFTABLE uniqueid="0x7004" flags="0x0">
     <title>KF_ZW_S_PF2 - Base ignition angle path 2 safe</title>
     <description>KF_ZW_S_PF2 - Base ignition angle path 2 safe  |  confidence: HIGH
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -240,7 +239,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="5" flags="0x0">
+  <XDFTABLE uniqueid="0x7005" flags="0x0">
     <title>KF_ZW_UESP_PF1 - Base ignition angle scavenging p1</title>
     <description>KF_ZW_UESP_PF1 - Base ignition angle scavenging p1  |  confidence: HIGH
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -289,7 +288,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="6" flags="0x0">
+  <XDFTABLE uniqueid="0x7006" flags="0x0">
     <title>KF_ZW_UESP_PF2 - Base ignition angle scavenging p2</title>
     <description>KF_ZW_UESP_PF2 - Base ignition angle scavenging p2  |  confidence: HIGH
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -338,7 +337,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="7" flags="0x0">
+  <XDFTABLE uniqueid="0x7007" flags="0x0">
     <title>KF_ZW_VP_PF1 - Ignition angle with VANOS at stop p1</title>
     <description>KF_ZW_VP_PF1 - Ignition angle with VANOS at stop p1  |  confidence: MEDIUM
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -387,7 +386,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="8" flags="0x0">
+  <XDFTABLE uniqueid="0x7008" flags="0x0">
     <title>KF_ZW_VP_PF2 - Ignition angle with VANOS at stop p2</title>
     <description>KF_ZW_VP_PF2 - Ignition angle with VANOS at stop p2  |  confidence: MEDIUM
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -436,7 +435,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="9" flags="0x0">
+  <XDFTABLE uniqueid="0x7009" flags="0x0">
     <title>KF_ZWMIN_WSOT - Min ignition angle, sound tuning warm</title>
     <description>KF_ZWMIN_WSOT - Min ignition angle, sound tuning warm  |  confidence: MEDIUM
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.
@@ -485,7 +484,7 @@ Values are BASE ignition angle in crank degrees; the final commanded timing incl
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="10" flags="0x0">
+  <XDFTABLE uniqueid="0x700A" flags="0x0">
     <title>KF_ZWMIN_KSOT - Min ignition angle, sound tuning cold</title>
     <description>KF_ZWMIN_KSOT - Min ignition angle, sound tuning cold  |  confidence: MEDIUM
 Symbol/dimensions/0.5 deg conversion from Bosch A2L R0C9J8B2B_3081-080_017_002.a2l (project R0C2J8B2B, MG1CS003, S15A-18). This target is S15A-17.

@@ -79,12 +79,28 @@ SCOPE / LIMITS
 
 CAT_IGN = 'Ignition timing'
 
+# XDF-level description. TunerPro expects <flags> and <description> as the first
+# children of <XDFHEADER>; every XDF in this project that loads successfully has
+# them there. The header comment below carries the long-form evidence.
+XDF_DESCRIPTION = (
+    'Ignition timing maps for BMW B58 / MG1CS003. EPK R0C2J772B, '
+    'EPST R0C9J772B, PST S15A-17-11-490, HW 10SW002828. '
+    'EXPLORATORY - NOT A VALIDATED TUNING DEFINITION. Load alongside '
+    'R0C2J772B_manual_inspection.xdf. Do not write to the ECU.'
+)
+
+# Table uniqueid base. TunerPro reads uniqueid as hex; plain decimal strings
+# ("1".."10") were the third defect in the original file.
+UID_BASE = 0x7000
+
 
 def build():
     size = os.path.getsize(TGT)
     ET.register_namespace('', '')
     xdf = ET.Element('XDFFORMAT', version='1.80')
     hdr = ET.SubElement(xdf, 'XDFHEADER')
+    ET.SubElement(hdr, 'flags').text = '0x1'
+    ET.SubElement(hdr, 'description').text = XDF_DESCRIPTION
     ET.SubElement(hdr, 'XDFAPPINFO')
     ET.SubElement(hdr, 'BASEOFFSET').text = '0x0'
     d = ET.SubElement(hdr, 'DEFAULTS', datatype='0', unittype='0', decimalpl='0')
@@ -98,7 +114,8 @@ def build():
     uid = 1
     for name, zaddr, xaddr, yaddr, nx, ny, conf, note in MAPS:
         assert zaddr + nx * ny <= size, name
-        t = ET.SubElement(xdf, 'XDFTABLE', uniqueid=str(uid), flags='0x0')
+        t = ET.SubElement(xdf, 'XDFTABLE', uniqueid='0x%X' % (UID_BASE + uid),
+                          flags='0x0')
         ET.SubElement(t, 'title').text = name
         ET.SubElement(t, 'description').text = (
             '%s  |  confidence: %s\n'
@@ -146,11 +163,11 @@ def build():
 
     xml = minidom.parseString(ET.tostring(xdf, encoding='utf-8')).toprettyxml(indent='  ')
     xml = xml.split('\n', 1)[1]
-    head = ('<?xml version="1.0" encoding="utf-8"?>\n'
-            '<!DOCTYPE XDFFORMAT [<!ELEMENT XDFFORMAT (XDFHEADER,XDFTABLE*)>\n'
-            '<!ELEMENT XDFTABLE (title,description,CATEGORYMEM,XDFAXIS,XDFAXIS,XDFAXIS)>\n'
-            '<!ELEMENT XDFAXIS (EMBEDDEDDATA?,units?,indexcount?,decimalpl?,min?,max?,'
-            'outputtype?,datatype?,unittype?,embedinfo?,DALINK?,MATH?)>]>\n')
+    # No <!DOCTYPE>. TunerPro's parser rejects the DTD with
+    # "Expecting '<' / CDATA"; every XDF in this project that loads fine has no
+    # DOCTYPE, and the ignition file was the only one that had one. The
+    # <?xml encoding="utf-8"?> declaration IS kept -- the working files have it.
+    head = '<?xml version="1.0" encoding="utf-8"?>\n'
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', encoding='utf-8') as fh:
         fh.write(head + '<!--\n' + HEADER + '-->\n' + xml)
